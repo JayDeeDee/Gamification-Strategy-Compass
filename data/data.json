@@ -4,7 +4,6 @@
     "id": "0-title"
   },
 
-
   {
     "name": "Context and Organization",
     "id": "1-context-organization",
@@ -161,7 +160,7 @@
   {
     "name": "Gamification Framework",
     "id": "2-gamification-framework",
-    "parent": "1-gamification-strategy"
+    "parent": "2-gamification-strategy"
   },
   {
     "name": " ",
