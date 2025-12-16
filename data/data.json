@@ -122,7 +122,7 @@
   },
   {
     "name": "",
-    "normal": { "fill": "#ffffff" },
+    "normal": { "fill": "#026397" },
     "id": "2-empty-gamification-goal",
     "parent": "2-gamification-goal"
   },
