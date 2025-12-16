@@ -162,6 +162,13 @@
     "id": "2-gamification-framework",
     "parent": "1-gamification-strategy"
   },
+  {
+    "name": " ",
+    "normal": { "fill": "#026397" },
+    "hovered": { "fill": "#026397" },  
+    "id": "2-empty-gamification-framework",
+    "parent": "1-gamification-strategy"
+  },
   
   {
     "name": "Tailoring",
