@@ -29,8 +29,11 @@
   
   <div id="container"></div>
   
+
   <script>
+
     anychart.onDocumentReady(function () {
+
       anychart.data.loadJsonFile(
         'data/data.json',
         function (data) {
@@ -40,10 +43,6 @@
           // create sunburst chart
           var chart = anychart.sunburst(dataTree);
 
-           chart.title("Gamification-Strategy-Compass<br><br>" +
-                "<span style='font-size:12; font-style:italic'>" +
-                "last modified: 2025-12-16</span>");
-
           // set calculation mode
           chart.calculationMode('ordinal-from-leaves');
 
@@ -51,7 +50,7 @@
           chart.labels().hAlign('center');
 
           // set custom palette
-          chart.palette(['#0288d1', '#d4e157', '#f8bbd0']);
+          chart.palette(['#0288d1', '#d4e157', '#ff6e40', '#f8bbd0']);
 
           // set point fill
           chart.fill(function () {
@@ -65,12 +64,12 @@
 
           // set container id for the chart
           chart.container('container');
-
           // initiate chart drawing
           chart.draw();
         }
       );
     });
-  </script>
+  
+</script>
 </body>
 </html>
