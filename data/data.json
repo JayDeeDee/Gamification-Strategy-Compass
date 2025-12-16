@@ -142,6 +142,7 @@
 
   {
     "name": "testitem geht so",
+    "normal": { "fill": "#0391DD" },
     "id": "3-item-gamification-goal",
     "parent": "2-empty-gamification-goal"
   },
@@ -167,7 +168,7 @@
     "normal": { "fill": "#026397" },
     "hovered": { "fill": "#026397" },  
     "id": "2-empty-gamification-framework",
-    "parent": "1-gamification-strategy"
+    "parent": "1-gamification-framework"
   },
   
   {
