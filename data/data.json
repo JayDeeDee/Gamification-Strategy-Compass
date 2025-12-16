@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Gamification Strategy Compass",
+    "id": "0-title"
+  },
+
+
+  {
+    "name": "Context and Organization",
+    "id": "1-context-organization",
+    "parent": "0-title"
+  },
+
+  {
+    "name": "Organizational Goal",
+    "id": "2-organizational-goal",
+    "parent": "1-context-organization"
+  },
+  {
+    "name": "",
+    "id": "2-empty-organizational-goal",
+    "parent": "2-organizational-goal"
+  },
+
+  {
+    "name": "Resources",
+    "id": "2-Resources",
+    "parent": "1-context-organization"
+  },
+    {
+    "name": "Team",
+    "id": "3-team",
+    "parent": "2-Resources"
+  },
+  {
+    "name": "Time",
+    "id": "3-time",
+    "parent": "2-Resources"
+  },
+  {
+    "name": "Budget",
+    "id": "3-budget",
+    "parent": "2-Resources"
+  },
+  {
+    "name": "Technologies/Tools",
+    "id": "3-technologies-tools",
+    "parent": "2-Resources"
+  },
+  {
+    "name": "Application Domain",
+    "id": "2-application-domain",
+    "parent": "1-context-organization"
+  },
+  {
+    "name": "",
+    "id": "2-empty-application-domain",
+    "parent": "2-application-domain"
+  },
+
+  {
+    "name": "Ethics",
+    "id": "2-ethics",
+    "parent": "1-context-organization"
+  },
+  {
+    "name": "",
+    "id": "2-empty-ethics",
+    "parent": "2-ethics"
+  },
+
+
+  {
+    "name": "Project Strategy",
+    "id": "1-project-strategy",
+    "parent": "0-title"
+  },
+  {
+    "name": "Project Goal",
+    "id": "2-project-goal",
+    "parent": "1-project-strategy"
+  },
+  {
+    "name": "Project Goal",
+    "id": "2-empty-project-goal",
+    "parent": "2-project-goal"
+  },
+
+  {
+    "name": "Theoretical Foundation",
+    "id": "2-theoretical-foundation",
+    "parent": "1-project-strategy"
+  },
+  {
+    "name": "Theoretical Foundation",
+    "id": "2-empty-theoretical-foundation",
+    "parent": "2-theoretical-foundation"
+  },
+
+  {
+    "name": "Framework",
+    "id": "2-framework",
+    "parent": "1-project-strategy"
+  },
+    {
+    "name": "Framework",
+    "id": "2-empty-framework",
+    "parent": "2-framework"
+  },
+
+  {
+    "name": "Gamification Strategy",
+    "id": "1-gamification-strategy",
+    "parent": "0-title"
+  },
+
+
+  {
+    "name": "Gamification Goal",
+    "id": "2-gamification-goal",
+    "parent": "1-gamification-strategy"
+  },
+  {
+    "name": "",
+    "normal": { "fill": "#ffffff" },
+    "id": "2-empty-gamification-goal",
+    "parent": "2-gamification-goal"
+  },
+
+  {
+    "name": "testitem geht so",
+    "id": "3-item-gamification-goal",
+    "parent": "2-empty-gamification-goal"
+  },
+
+  {
+    "name": "Gamification Theory",
+    "id": "2-gamification-theory",
+    "parent": "1-gamification-strategy"
+  },
+  {
+    "name": "Model",
+    "id": "3-model",
+    "parent": "2-gamification-theory"
+  },
+
+  {
+    "name": "Gamification Framework",
+    "id": "2-gamification-framework",
+    "parent": "1-gamification-strategy"
+  },
+  
+  {
+    "name": "Tailoring",
+    "id": "2-tailoring",
+    "parent": "1-gamification-strategy"
+  },
+
+  {
+    "name": "Tailoring Focus",
+    "id": "3-tailoring-focus",
+    "parent": "2-tailoring"
+  },
+  {
+    "name": "Tailoring Methods",
+    "id": "3-tailoring-methods",
+    "parent": "2-tailoring"
+  },
+  {
+    "name": "Test",
+    "id": "2-test",
+    "parent": "1-gamification-strategy"
+  },
+
+  {
+    "name": "Evaluation Dimensions",
+    "id": "3-evaluation-dimensions",
+    "parent": "2-test"
+  },
+
+  {
+    "name": "Evaluation Methods",
+    "id": "3-evaluation-methods",
+    "parent": "2-test"
+  },
+
+  {
+    "name": "Validation Methods",
+    "id": "3-validation-methods",
+    "parent": "2-test"
+  }
+
+]
+

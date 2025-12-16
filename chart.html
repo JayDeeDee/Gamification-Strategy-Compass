@@ -1,0 +1,76 @@
+<html>
+<head>
+  <script src="js/anychart-base.min.js"></script>
+  <script src="js/anychart-sunburst.min.js"></script>
+  <script src="js/anychart-ui.min.js"></script>
+  <script src="js/anychart-exports.min.js"></script>
+  <script src="js/anychart-data-adapter.min.js"></script>
+  <link href="css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+
+  <style type="text/css">
+
+    html,
+    body,
+    #container {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 140%;
+      height: 140%;
+    }
+  
+</style>
+</head>
+<body>
+  
+  <div id="container"></div>
+  
+  <script>
+    anychart.onDocumentReady(function () {
+      anychart.data.loadJsonFile(
+        'data/data.json',
+        function (data) {
+          // makes tree from the data for the sample
+          var dataTree = anychart.data.tree(data, 'as-table');
+
+          // create sunburst chart
+          var chart = anychart.sunburst(dataTree);
+
+           chart.title("Gamification-Strategy-Compass<br><br>" +
+                "<span style='font-size:12; font-style:italic'>" +
+                "last modified: 2025-12-16</span>");
+
+          // set calculation mode
+          chart.calculationMode('ordinal-from-leaves');
+
+          // set chart labels settings
+          chart.labels().hAlign('center');
+
+          // set custom palette
+          chart.palette(['#0288d1', '#d4e157', '#f8bbd0']);
+
+          // set point fill
+          chart.fill(function () {
+            return this.parent
+              ? anychart.color.darken(this.parentColor, 0.15)
+              : this.mainColor;
+          });
+
+          // format chart tooltip
+          chart.tooltip().format('Tooltipp mit Definition');
+
+          // set container id for the chart
+          chart.container('container');
+
+          // initiate chart drawing
+          chart.draw();
+        }
+      );
+    });
+  </script>
+</body>
+</html>
