@@ -55,7 +55,7 @@
     "parent": "1-context-organization"
   },
   {
-    "name": "",
+    "name": " ",
     "normal": { "fill": "#026397" },
     "hovered": { "fill": "#026397" },
     "id": "2-empty-application-domain",
