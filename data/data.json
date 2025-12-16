@@ -17,7 +17,7 @@
     "parent": "1-context-organization"
   },
   {
-    "name": ".",
+    "name": " ",
     "normal": { "fill": "#026397" },
     "hovered": { "fill": "#026397" },
     "id": "2-empty-organizational-goal",
@@ -68,7 +68,7 @@
     "parent": "1-context-organization"
   },
   {
-    "name": ".",
+    "name": " ",
     "normal": { "fill": "#026397" },
     "hovered": { "fill": "#026397" },
     "id": "2-empty-ethics",
@@ -87,7 +87,7 @@
     "parent": "1-project-strategy"
   },
   {
-    "name": ".",
+    "name": " ",
     "normal": { "fill": "#026397" },
     "hovered": { "fill": "#026397" },
     "id": "2-empty-project-goal",
@@ -100,7 +100,7 @@
     "parent": "1-project-strategy"
   },
   {
-    "name": ".",
+    "name": " ",
     "normal": { "fill": "#026397" },
     "hovered": { "fill": "#026397" },
     "id": "2-empty-theoretical-foundation",
@@ -113,7 +113,7 @@
     "parent": "1-project-strategy"
   },
     {
-    "name": ".",
+    "name": " ",
     "normal": { "fill": "#026397" },
     "hovered": { "fill": "#026397" },
     "id": "2-empty-framework",
@@ -133,7 +133,7 @@
     "parent": "1-gamification-strategy"
   },
   {
-    "name": ".",
+    "name": " ",
     "normal": { "fill": "#026397" },
     "hovered": { "fill": "#026397" },
     "id": "2-empty-gamification-goal",
@@ -141,7 +141,7 @@
   },
 
   {
-    "name": "testitem geht so",
+    "name": "Testitem",
     "normal": { "fill": "#0391DD" },
     "id": "3-item-gamification-goal",
     "parent": "2-empty-gamification-goal"
