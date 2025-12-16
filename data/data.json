@@ -18,6 +18,8 @@
   },
   {
     "name": "",
+    "normal": { "fill": "#026397" },
+    "hovered": { "fill": "#026397" },
     "id": "2-empty-organizational-goal",
     "parent": "2-organizational-goal"
   },
@@ -54,6 +56,8 @@
   },
   {
     "name": "",
+    "normal": { "fill": "#026397" },
+    "hovered": { "fill": "#026397" },
     "id": "2-empty-application-domain",
     "parent": "2-application-domain"
   },
@@ -81,7 +85,9 @@
     "parent": "1-project-strategy"
   },
   {
-    "name": "Project Goal",
+    "name": "",
+    "normal": { "fill": "#026397" },
+    "hovered": { "fill": "#026397" },
     "id": "2-empty-project-goal",
     "parent": "2-project-goal"
   },
@@ -92,7 +98,9 @@
     "parent": "1-project-strategy"
   },
   {
-    "name": "Theoretical Foundation",
+    "name": "",
+    "normal": { "fill": "#026397" },
+    "hovered": { "fill": "#026397" },
     "id": "2-empty-theoretical-foundation",
     "parent": "2-theoretical-foundation"
   },
@@ -103,7 +111,9 @@
     "parent": "1-project-strategy"
   },
     {
-    "name": "Framework",
+    "name": "",
+    "normal": { "fill": "#026397" },
+    "hovered": { "fill": "#026397" },
     "id": "2-empty-framework",
     "parent": "2-framework"
   },
@@ -123,6 +133,7 @@
   {
     "name": "",
     "normal": { "fill": "#026397" },
+    "hovered": { "fill": "#026397" },
     "id": "2-empty-gamification-goal",
     "parent": "2-gamification-goal"
   },
@@ -130,6 +141,7 @@
   {
     "name": "testitem geht so",
     "id": "3-item-gamification-goal",
+
     "parent": "2-empty-gamification-goal"
   },
 
