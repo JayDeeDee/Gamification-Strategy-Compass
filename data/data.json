@@ -28,11 +28,41 @@
     "id": "2-Resources",
     "parent": "1-context-organization"
   },
-    {
+   {
     "name": "Team",
     "id": "3-team",
     "parent": "2-Resources"
   },
+          {"name": "size",
+           "id": "4-team-size",
+           "parent": "3-team"
+          },
+                  {"name": "individual/solo",
+                  "id": "5-team-size-individual",
+                  "parent": "4-team-size"
+                  },
+                  {"name": "small (2-5)",
+                  "id": "5-team-size-small",
+                  "parent": "4-team-size"
+                  },
+                  {"name": "medium (6-15)",
+                  "id": "5-team-size-medium",
+                  "parent": "4-team-size"
+                  },
+                  {"name": "large (16-50)",
+                  "id": "5-team-size-large",
+                  "parent": "4-team-size"
+                  },
+                  {"name": "very large (51+)",
+                  "id": "5-team-size-very-large",
+                  "parent": "4-team-size"
+                  },
+
+          {"name": "expertise",
+           "id": "4-team-expertise",
+           "parent": "3-team"
+          },
+        
   {
     "name": "Time",
     "id": "3-time",
