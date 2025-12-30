@@ -43,6 +43,32 @@
     "id": "3-budget",
     "parent": "2-Resources"
   },
+{
+    "name": "Micro (<$10,000)",
+    "id": "4-microBudget",
+    "parent": "3-budget"
+  },
+  {
+    "name": "Small ($10,000-$100,000)",
+    "id": "4-smallBudget",
+    "parent": "3-budget"
+  },
+  {
+    "name": "Medium ($100,000-$1million)",
+    "id": "4-mediumBudget",
+    "parent": "3-budget"
+  },
+  {
+    "name": "Large ($1million-$10million)",
+    "id": "4-largeBudget",
+    "parent": "3-budget"
+  },
+  {
+    "name": "Mega (>$10million)",
+    "id": "4-megaBudget",
+    "parent": "3-budget"
+  },
+
   {
     "name": "Technologies/Tools",
     "id": "3-technologies-tools",
