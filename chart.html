@@ -60,7 +60,7 @@
           });
 
           // format chart tooltip
-          chart.tooltip().format('Tooltipp mit Definition');
+          chart.tooltip().format("<b>{%value}</b>{%type}</b>{%description}");
 
           // set container id for the chart
           chart.container('container');

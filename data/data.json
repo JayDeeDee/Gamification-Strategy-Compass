@@ -7,6 +7,8 @@
   {
     "name": "Context and Organization",
     "id": "1-context-organization",
+    "type": "dimension",
+    "description": "It includes all aspects that may influence the gamification strategy and are defined\nor impacted by the organizational structure.",
     "parent": "0-title"
   },
 
@@ -191,11 +193,11 @@
   {
     "name": " ",
     "normal": { "fill": "#026397" },
-    "hovered": { "fill": "#026397" },  
+    "hovered": { "fill": "#026397" },
     "id": "2-empty-gamification-framework",
     "parent": "2-gamification-framework"
   },
-  
+
   {
     "name": "Tailoring",
     "id": "2-tailoring",
