@@ -1,14 +1,16 @@
 <html>
 <head>
+
+  <title>Gamification Strategy Compass</title>
+
   <script src="js/anychart-base.min.js"></script>
   <script src="js/anychart-sunburst.min.js"></script>
   <script src="js/anychart-ui.min.js"></script>
   <script src="js/anychart-exports.min.js"></script>
   <script src="js/anychart-data-adapter.min.js"></script>
+
   <link href="css/anychart-ui.min.css" type="text/css" rel="stylesheet">
-
   <style type="text/css">
-
     html,
     body,
     #container {
@@ -22,27 +24,22 @@
       width: 140%;
       height: 140%;
     }
-  
-</style>
+  </style>
 </head>
 <body>
-  
   <div id="container"></div>
-  
 
   <script>
-
     anychart.onDocumentReady(function () {
-
       anychart.data.loadJsonFile(
         'data/data.json',
         function (data) {
           // makes tree from the data for the sample
-          var dataTree = anychart.data.tree(data, 'as-table');
+          let dataTree = anychart.data.tree(data, 'as-table');
 
 
           // create sunburst chart
-          var chart = anychart.sunburst(dataTree);
+          let chart = anychart.sunburst(dataTree);
 
           chart.title("last modified: 2025-12-16");
 
@@ -63,8 +60,11 @@
           });
 
           // format chart tooltip
-          chart.tooltip().format('Tooltipp mit Definition');
+          let tooltip = chart.tooltip();
+          tooltip.title().text("Titel");
+          tooltip.format("{%type}\n{%description}");
 
+          console.log(chart);
           // set container id for the chart
           chart.container('container');
           // initiate chart drawing
@@ -72,7 +72,6 @@
         }
       );
     });
-  
 </script>
 </body>
 </html>
