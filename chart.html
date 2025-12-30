@@ -35,11 +35,11 @@
         'data/data.json',
         function (data) {
           // makes tree from the data for the sample
-          var dataTree = anychart.data.tree(data, 'as-table');
+          let dataTree = anychart.data.tree(data, 'as-table');
 
 
           // create sunburst chart
-          var chart = anychart.sunburst(dataTree);
+          let chart = anychart.sunburst(dataTree);
 
           chart.title("last modified: 2025-12-16");
 
@@ -60,7 +60,11 @@
           });
 
           // format chart tooltip
-          chart.tooltip().format("<b>{%value}</b>{%type}</b>{%description}");
+          let tooltip = chart.tooltip();
+          console.log(chart);
+          tooltip.title().text("{%name}");
+          tooltip.useHtml(true);
+          tooltip.format("{%type}<br/>{%description}");
 
           // set container id for the chart
           chart.container('container');
