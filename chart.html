@@ -61,12 +61,10 @@
 
           // format chart tooltip
           let tooltip = chart.tooltip();
-          console.log(chart);
-
-          tooltip.useHtml(true);
-          tooltip.title().text("::{%name}::");
+          tooltip.title().text("Titel");
           tooltip.format("{%type}\n{%description}");
 
+          console.log(chart);
           // set container id for the chart
           chart.container('container');
           // initiate chart drawing
