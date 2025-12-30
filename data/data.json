@@ -8,7 +8,7 @@
     "name": "Context and Organization",
     "id": "1-context-organization",
     "type": "dimension",
-    "description": "It includes all aspects that may influence the gamification strategy and are defined\nor impacted by the organizational structure.",
+    "description": "It includes all aspects that may influence \nthe gamification strategy and are defined\nor impacted by the organizational structure.",
     "parent": "0-title"
   },
 
