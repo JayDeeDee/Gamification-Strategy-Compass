@@ -473,11 +473,23 @@
     "parent": "2-test"
   },
 
+
+
   {
     "name": "Validation Methods",
     "id": "3-validation-methods",
     "parent": "2-test"
-  }
+  },
 
+      {
+        "name": "Validation with Users",
+        "id": "4-validation-methods-validation-with-users",
+        "parent": "3-validation-methods"
+      },
+      {
+        "name": "Validation with Experts",
+        "id": "4-validation-methods-validation-with-experts",
+        "parent": "3-validation-methods"
+      }
 ]
 
