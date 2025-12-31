@@ -1,11 +1,13 @@
 [
   {
     "name": "Gamification Strategy Compass",
+    "normal": { "fill": "#2F2F2F" },
     "id": "0-title"
   },
 
   {
     "name": "Context and Organization",
+    "normal": { "fill": "#4D7796" },
     "id": "1-context-organization",
     "type": "dimension",
     "description": "It includes all aspects that may influence \nthe gamification strategy and are defined\nor impacted by the organizational structure.",
@@ -241,6 +243,7 @@
 
   {
     "name": "Project Strategy",
+    "normal": { "fill": "#587853" },
     "id": "1-project-strategy",
     "parent": "0-title"
   },
@@ -285,6 +288,7 @@
 
   {
     "name": "Gamification Strategy",
+    "normal": { "fill": "#E4A761" },
     "id": "1-gamification-strategy",
     "parent": "0-title"
   },
