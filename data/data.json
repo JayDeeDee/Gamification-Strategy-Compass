@@ -163,6 +163,8 @@
     "id": "3-technologies-tools",
     "parent": "2-Resources"
   },
+
+
   {
     "name": "Application Domain",
     "id": "2-application-domain",
@@ -175,7 +177,22 @@
     "id": "2-empty-application-domain",
     "parent": "2-application-domain"
   },
-
+        {"name": "Education",
+         "id": "3-education",
+         "parent": "2-application-domain"
+        },
+        {"name": "Health",
+         "id": "3-health",
+         "parent": "2-application-domain"
+        },
+        {"name": "Business",
+         "id": "3-business",
+         "parent": "2-application-domain"
+        },
+        {"name": "Other",
+         "id": "3-other-application-domain",
+         "parent": "2-application-domain"
+        },
   {
     "name": "Ethics",
     "id": "2-ethics",
@@ -286,13 +303,53 @@
     "parent": "2-gamification-goal"
   },
 
-  {
-    "name": "Testitem",
-    "normal": { "fill": "#0391DD" },
-    "id": "3-item-gamification-goal",
-    "parent": "2-empty-gamification-goal"
-  },
-
+        {
+          "name": "Achieve Longterm Goals",
+          "normal": { "fill": "#0391DD" },
+          "id": "3-gamification-goal-longterm-goals",
+          "parent": "2-empty-gamification-goal"
+        },
+        {"name": "Address Emotions",
+         "id": "3-gamification-goal-address-emotions",
+         "parent": "2-empty-gamification-goal"
+        },
+        {"name": "Create Positive UX",
+         "id": "3-gamification-goal-create-positive-ux",
+         "parent": "2-empty-gamification-goal"
+        },
+        {"name": "Encourage Behavior Change",
+         "id": "3-gamification-goal-encourage-behavior-change",
+         "parent": "2-empty-gamification-goal"
+        },
+        {"name": "Enhance Motivation",
+         "id": "3-gamification-goal-",
+         "parent": "2-empty-gamification-goal"
+        },
+        {"name": "Enhance Processes",
+         "id": "3-gamification-goal-enhance-processes",
+         "parent": "2-empty-gamification-goal"
+        },
+        {"name": "Make Success Measurable",
+         "id": "3-gamification-goal-",
+         "parent": "2-empty-gamification-goal"
+        },
+        {"name": "Researching Gamification",
+         "id": "3-gamification-goal-researching-gamification",
+         "parent": "2-empty-gamification-goal"
+        },
+        {"name": "Stimulate Interest",
+         "id": "3-gamification-goal-stimulate-interest",
+         "parent": "2-empty-gamification-goal"
+        },
+        { "name": "Support teaching/learning",
+          "id": "3-gamification-goal-support-teaching",
+          "parent": "2-empty-gamification-goal"
+        },
+        {"name": "Other",
+         "id": "3-gamification-goal-other",
+         "parent": "2-empty-gamification-goal"
+        },
+        
   {
     "name": "Gamification Theory",
     "id": "2-gamification-theory",
