@@ -179,19 +179,19 @@
   },
         {"name": "Education",
          "id": "3-education",
-         "parent": "2-application-domain"
+         "parent": "2-empty-application-domain"
         },
         {"name": "Health",
          "id": "3-health",
-         "parent": "2-application-domain"
+         "parent": "2-empty-application-domain"
         },
         {"name": "Business",
          "id": "3-business",
-         "parent": "2-application-domain"
+         "parent": "2-empty-application-domain"
         },
         {"name": "Other",
          "id": "3-other-application-domain",
-         "parent": "2-application-domain"
+         "parent": "2-empty-application-domain"
         },
   {
     "name": "Ethics",
@@ -207,35 +207,35 @@
   },
         {"name": "Power Dynamics and Paternalism",
          "id": "3-power-dynamics-paternalism",
-         "parent": "2-ethics"
+         "parent": "2-empty-ethics"
         },
         {"name": "Privacy and Data Protection",
          "id": "3-privacy-data-protection",
-         "parent": "2-ethics"
+         "parent": "2-empty-ethics"
         },
         {"name": "Informed Consent",
          "id": "3-informed-consent",
-         "parent": "2-ethics"
+         "parent": "2-empty-ethics"
         },
         {"name": "Addiction and Overuse",
          "id": "3-addiction-overuse",
-         "parent": "2-ethics"
+         "parent": "2-empty-ethics"
         },
         {"name": "Inclusivity and Accessibility",
          "id": "3-inclusivity-accessibility",
-         "parent": "2-ethics"
+         "parent": "2-empty-ethics"
         },
         {"name": "Cultural Sensitivity",
          "id": "3-cultural-sensitivity",
-         "parent": "2-ethics"
+         "parent": "2-empty-ethics"
         },
         {"name": "Psychological Impact/Cognitive Manipulation",
          "id": "3-psychological-impact",
-         "parent": "2-ethics"
+         "parent": "2-empty-ethics"
         },
         {"name": "Social Comparison",
          "id": "3-social-comparison",
-         "parent": "2-ethics"
+         "parent": "2-empty-ethics"
         },
 
 
