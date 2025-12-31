@@ -402,6 +402,67 @@
     "parent": "2-test"
   },
 
+      {
+        "name": "User Satisfaction",
+        "id": "4-evaluation-dimensions-user-satisfaction",
+        "parent": "3-evaluation-dimensions"
+      },
+      {
+        "name": "User Experience",
+        "id": "4-evaluation-dimensions-user-experience",
+        "parent": "3-evaluation-dimensions"
+      },
+      {
+        "name": "User Preferences",
+        "id": "4-evaluation-dimensions-user-preferences",
+        "parent": "3-evaluation-dimensions"
+      },
+      {
+        "name": "Completion/Participation Rates",
+        "id": "4-evaluation-dimensions-completion-rates",
+        "parent": "3-evaluation-dimensions"
+      },
+      {
+        "name": "Accessibility",
+        "id": "4-evaluation-dimensions-accessibility",
+        "parent": "3-evaluation-dimensions"
+      },
+      {
+        "name": "Usability",
+        "id": "4-evaluation-dimensions-usability",
+        "parent": "3-evaluation-dimensions"
+      },
+      {
+        "name": "Feasibility",
+        "id": "4-evaluation-dimensions-feasibility",
+        "parent": "3-evaluation-dimensions"
+      },
+      {
+        "name": "Safety",
+        "id": "4-evaluation-dimensions-safety",
+        "parent": "3-evaluation-dimensions"
+      },
+      {
+        "name": "Self-management Behavior Record",
+        "id": "4-evaluation-dimensions-self-management-behavior-record",
+        "parent": "3-evaluation-dimensions"
+      },
+      {
+        "name": "Economic Cost",
+        "id": "4-evaluation-dimensions-economic-cost",
+        "parent": "3-evaluation-dimensions"
+      },
+      {
+        "name": "Learning Performance",
+        "id": "4-evaluation-dimensions-learning-performance",
+        "parent": "3-evaluation-dimensions"
+      },
+      {
+        "name": "Other",
+        "id": "4-evaluation-dimensions-other",
+        "parent": "3-evaluation-dimensions"
+      },
+
   {
     "name": "Evaluation Methods",
     "id": "3-evaluation-methods",
