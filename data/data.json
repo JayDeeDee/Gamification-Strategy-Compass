@@ -19,27 +19,20 @@
     "id": "2-organizational-goal",
     "parent": "1-context-organization"
   },
-  {
-    "name": " ",
-    "normal": { "fill": "#026397" },
-    "hovered": { "fill": "#026397" },
-    "id": "2-empty-organizational-goal",
-    "parent": "2-organizational-goal"
-  },
           {
             "name": "Long-term",
-            "id": "3-empty-organizational-goal-longterm",
-            "parent": "2-empty-organizational-goal"
+            "id": "3-organizational-goal-longterm",
+            "parent": "2-organizational-goal"
           },
           {
             "name": "Medium-term",
-            "id": "3-empty-organizational-goal-mediumterm",
-            "parent": "2-empty-organizational-goal"
+            "id": "3-organizational-goal-mediumterm",
+            "parent": "2-organizational-goal"
           },
           {
             "name": "Short-term",
-            "id": "3-empty-organizational-goal-shortterm",
-            "parent": "2-empty-organizational-goal"
+            "id": "3-organizational-goal-shortterm",
+            "parent": "2-organizational-goal"
           },
   
 
