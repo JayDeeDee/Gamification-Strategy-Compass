@@ -438,112 +438,102 @@
     "id": "3-tailoring-focus",
     "parent": "2-tailoring"
   },
-        {
-          "name": "User Modeling",
-          "id": "4-tailoring-focus-user-modeling",
-          "parent": "3-tailoring-focus"
-        },
             {
               "name": "Player Typology",
-              "id": "5-tailoring-focus-player-typology",
-              "parent": "4-tailoring-focus-user-characteristics"
+              "id": "4-tailoring-focus-player-typology",
+              "parent": "3-tailoring-focus"
             },
                   {
                     "name": "Bartle",
-                    "id": "6-tailoring-focus-player-typology-bartle",
-                    "parent": "5-tailoring-focus-player-typology"
+                    "id": "5-tailoring-focus-player-typology-bartle",
+                    "parent": "4-tailoring-focus-player-typology"
                   },
                   {
                     "name": "Hexad",
-                    "id": "6-tailoring-focus-player-typology-hexad",
-                    "parent": "5-tailoring-focus-player-typology"
+                    "id": "5-tailoring-focus-player-typology-hexad",
+                    "parent": "4-tailoring-focus-player-typology"
                   },
                   {
                     "name": "BrainHex",
-                    "id": "6-tailoring-focus-player-typology-brainhex",
-                    "parent": "5-tailoring-focus-player-typology"
+                    "id": "5-tailoring-focus-player-typology-brainhex",
+                    "parent": "4-tailoring-focus-player-typology"
                   },
                   {
                     "name": "Ferro",
-                    "id": "6-tailoring-focus-player-typology-ferro",
-                    "parent": "5-tailoring-focus-player-typology"
+                    "id": "5-tailoring-focus-player-typology-ferro",
+                    "parent": "4-tailoring-focus-player-typology"
                   },
                   {
                     "name": "Four Student Profiles of Barata et al.",
-                    "id": "6-tailoring-focus-player-typology-barata",
-                    "parent": "5-tailoring-focus-player-typology"
+                    "id": "5-tailoring-focus-player-typology-barata",
+                    "parent": "4-tailoring-focus-player-typology"
                   },
                   {
                     "name": "Five Player Roles of Borges et al.",
-                    "id": "6-tailoring-focus-player-typology-borges",
-                    "parent": "5-tailoring-focus-player-typology"
+                    "id": "5-tailoring-focus-player-typology-borges",
+                    "parent": "4-tailoring-focus-player-typology"
                   },
 
             {
               "name": "Gender",
-              "id": "5-tailoring-focus-gender",
-              "parent": "4-tailoring-focus-user-characteristics"
+              "id": "4-tailoring-focus-gender",
+              "parent": "3-tailoring-focus"
             },
             {
               "name": "Age",
-              "id": "5-tailoring-focus-age",
-              "parent": "4-tailoring-focus-user-characteristics"
+              "id": "4-tailoring-focus-age",
+              "parent": "3-tailoring-focus"
             },
             {
               "name": "Culture",
-              "id": "5-tailoring-focus-culture",
-              "parent": "4-tailoring-focus-user-characteristics"
+              "id": "4-tailoring-focus-culture",
+              "parent": "3-tailoring-focus"
             },
             {
               "name": "Personality Traits",
-              "id": "5-tailoring-focus-personality-traits",
-              "parent": "4-tailoring-focus-user-characteristics"
+              "id": "4-tailoring-focus-personality-traits",
+              "parent": "3-tailoring-focus"
             },
                 {
                   "name": "Big Five/OCEAN",
-                  "id": "6-tailoring-focus-personality-traits-big-five",
-                  "parent": "5-tailoring-focus-personality-traits"
+                  "id": "5-tailoring-focus-personality-traits-big-five",
+                  "parent": "4-tailoring-focus-personality-traits"
                 },
                 {
                   "name": "Myer-Briggs Type Indicator (MBTI)",
-                  "id": "6-tailoring-focus-personality-traits-mbti",
-                  "parent": "5-tailoring-focus-personality-traits"
+                  "id": "5-tailoring-focus-personality-traits-mbti",
+                  "parent": "4-tailoring-focus-personality-traits"
                 },
                 {
                   "name": "Goal Orientation Theory",
-                  "id": "6-tailoring-focus-personality-traits-goal-orientation",
-                  "parent": "5-tailoring-focus-personality-traits"
+                  "id": "5-tailoring-focus-personality-traits-goal-orientation",
+                  "parent": "4-tailoring-focus-personality-traits"
                 },
                 {
                   "name": "Murray's Secondary Psychological Needs",
-                  "id": "6-tailoring-focus-personality-traits-murray-secondary-psy",
-                  "parent": "5-tailoring-focus-personality-traits"
+                  "id": "5-tailoring-focus-personality-traits-murray-secondary-psy",
+                  "parent": "4-tailoring-focus-personality-traits"
                 },
             {
               "name": "Motivation",
-              "id": "5-tailoring-focus-motivation",
-              "parent": "4-tailoring-focus-user-characteristics"
+              "id": "4-tailoring-focus-motivation",
+              "parent": "3-tailoring-focus"
             },
             {
               "name": "Behavior",
-              "id": "5-tailoring-focus-behavior",
-              "parent": "4-tailoring-focus-user-characteristics"
+              "id": "4-tailoring-focus-behavior",
+              "parent": "3-tailoring-focus"
             },
             {
               "name": "Pedagogical Profile",
-              "id": "5-tailoring-focus-pedagogical-profile",
-              "parent": "4-tailoring-focus-user-characteristics"
+              "id": "4-tailoring-focus-pedagogical-profile",
+              "parent": "3-tailoring-focus"
             },
             {
               "name": "Performance",
-              "id": "5-tailoring-focus-performance",
-              "parent": "4-tailoring-focus-user-characteristics"
+              "id": "4-tailoring-focus-performance",
+              "parent": "3-tailoring-focus"
             },
-       {
-          "name": "Adaptation",
-          "id": "4-tailoring-focus-adaptation",
-          "parent": "3-tailoring-focus"
-        },
   {
     "name": "Tailoring Methods",
     "id": "3-tailoring-methods",
