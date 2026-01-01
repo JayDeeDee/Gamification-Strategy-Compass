@@ -26,6 +26,22 @@
     "id": "2-empty-organizational-goal",
     "parent": "2-organizational-goal"
   },
+          {
+            "name": "Long-term",
+            "id": "3-empty-organizational-goal-longterm",
+            "parent": "2-empty-organizational-goal"
+          },
+          {
+            "name": "Medium-term",
+            "id": "3-empty-organizational-goal-mediumterm",
+            "parent": "2-empty-organizational-goal"
+          },
+          {
+            "name": "Short-term",
+            "id": "3-empty-organizational-goal-shortterm",
+            "parent": "2-empty-organizational-goal"
+          },
+  
 
   {
     "name": "Resources",
@@ -252,6 +268,7 @@
     "id": "2-project-goal",
     "parent": "1-project-strategy"
   },
+
   {
     "name": " ",
     "normal": { "fill": "#026397" },
@@ -259,6 +276,8 @@
     "id": "2-empty-project-goal",
     "parent": "2-project-goal"
   },
+          
+
 
   {
     "name": "Theoretical Foundation",
