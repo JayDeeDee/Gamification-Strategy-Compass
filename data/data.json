@@ -172,6 +172,7 @@
   {
     "name": "Technologies/Tools",
     "id": "3-technologies-tools",
+    "description": "Available technologies and tools that can be used \nto implement the gamification strategy. \nSome technologies may be mandatory for the organization \nand some may be prohibited in your organization. \nBecause of the almost endless number of possible technologies and tools on the market,\nthe GSC does not provide a list at this point. This only serves as a reminder,\nto check to compatibility of your gamification strategy with the available technologies and tools.",
     "parent": "2-Resources"
   },
 
