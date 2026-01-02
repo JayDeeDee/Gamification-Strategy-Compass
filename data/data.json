@@ -262,50 +262,42 @@
     "id": "2-project-goal",
     "parent": "1-project-strategy"
   },
-
-  {
-    "name": " ",
-    "normal": { "fill": "#026397" },
-    "hovered": { "fill": "#026397" },
-    "id": "2-empty-project-goal",
-    "parent": "2-project-goal"
-  },
           
           {"name": "Capability Creation",
           "id": "3-project-goal-capability-creation",
-          "parent": "2-empty-project-goal"
+          "parent": "2-project-goal"
           },
           {"name": "Knowledge & Skill Formation",
            "id": "3-project-goal-knowledge-skill-formation",
-           "parent": "2-empty-project-goal"
+           "parent": "2-project-goal"
           },
           {"name": "Process Execution",
            "id": "3-project-goal-process-execution",
-           "parent": "2-empty-project-goal"
+           "parent": "2-project-goal"
           },
           {"name": "Optimization",
             "id": "3-project-goal-optimization",
-            "parent": "2-empty-project-goal"
+            "parent": "2-project-goal"
           },
           {"name": "Control & Assurance",
             "id": "3-project-goal-control-assurance",
-            "parent": "2-empty-project-goal"
+            "parent": "2-project-goal"
           },
           {"name": "Observation & Feedback",
             "id": "3-project-goal-observation-feedback",
-            "parent": "2-empty-project-goal"
+            "parent": "2-project-goal"
           },
           {"name": "Behavior & Motivation Shaping",
             "id": "3-project-goal-behavior-motivation-shaping",
-            "parent": "2-empty-project-goal"
+            "parent": "2-project-goal"
           },
           {"name": "Structural Transformation",
             "id": "3-project-goal-structural-transformation",
-            "parent": "2-empty-project-goal"
+            "parent": "2-project-goal"
           },
           {"name": "Other",
            "id": "3-project-goal-other",
-           "parent": "2-empty-project-goal"
+           "parent": "2-project-goal"
           },
             
 
