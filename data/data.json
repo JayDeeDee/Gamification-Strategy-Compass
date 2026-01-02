@@ -311,43 +311,62 @@
     "name": "Project Goal",
     "id": "2-project-goal",
     "type": "Category",
+    "description": "Every project has some kind of goal (e.g., teaching a skill or organizing something). This project\ngoal needs to be considered when choosing the gamification strategy, which should support the\nproject goal. As each project goal is individual we give only project goal categories.\nA project may have goals from several categories",
     "parent": "1-project-strategy"
   },
           
           {"name": "Capability Creation",
           "id": "3-project-goal-capability-creation",
+          "type": "Subcategory",
+          "description": "The project expands the space of what is possible for individuals, groups, or organizations.",
           "parent": "2-project-goal"
           },
           {"name": "Knowledge & Skill Formation",
            "id": "3-project-goal-knowledge-skill-formation",
+           "type": "Subcategory",
+           "description": "The project aims to impart specific knowledge or skills to individuals or groups.",
            "parent": "2-project-goal"
           },
           {"name": "Process Execution",
            "id": "3-project-goal-process-execution",
+           "type": "Subcategory",
+           "description": "The project results in a system that actively performs, replaces, or directly supports concrete tasks or decisions.",
            "parent": "2-project-goal"
           },
           {"name": "Optimization",
             "id": "3-project-goal-optimization",
+            "type": "Subcategory",
+            "description": "The project aims to improve the performance of an existing processor activity along defined dimensions (e.g.,\nefficiency, quality, speed).",
             "parent": "2-project-goal"
           },
           {"name": "Control & Assurance",
             "id": "3-project-goal-control-assurance",
+            "type": "Subcategory",
+            "description": "The project is intended to ensure, enforce, or safeguard predefined acceptable states, preventing or detecting\ndeviations",
             "parent": "2-project-goal"
           },
           {"name": "Observation & Feedback",
             "id": "3-project-goal-observation-feedback",
+            "type": "Subcategory",
+            "description": "The project primarily aims to generate information, measurements, or transparency about states, behavior, or\nperformance, without directly altering them.",
             "parent": "2-project-goal"
           },
           {"name": "Behavior & Motivation Shaping",
             "id": "3-project-goal-behavior-motivation-shaping",
+            "type": "Subcategory",
+            "description": "The project is designed to influence human behavior, decisions, or motivation through incentives, feedback,\nor persuasive mechanisms.",
             "parent": "2-project-goal"
           },
           {"name": "Structural Transformation",
             "id": "3-project-goal-structural-transformation",
+            "type": "Subcategory",
+            "description": "produces lasting changes to organizational structures, roles, decision logics, or system configurations,\nresulting in a new stable organizational state.",
             "parent": "2-project-goal"
           },
           {"name": "Other",
            "id": "3-project-goal-other",
+           "type": "Subcategory",
+           "description": "If your project goal does not fit into any of these categories, please suggest an addition.",
            "parent": "2-project-goal"
           },
             
@@ -356,41 +375,49 @@
     "name": "Theoretical Foundation",
     "id": "2-theoretical-foundation",
     "type": "Category",
+    "description": "The project may build upon a specific theoretical foundation, such as a learning theory. Any\ngamification theory that is applied must not conflict with this theoretical foundation.",
     "parent": "1-project-strategy"
   },
       {
         "name": "Constructivism",
         "id": "3-theoretical-foundation-constructivism",
+        "type": "Item",
         "parent": "2-theoretical-foundation"
       },
       {
         "name": "Self-determination Theory",
         "id": "3-theoretical-foundation-self-determination-theory",
+        "type": "Item",
         "parent": "2-theoretical-foundation"
       },
       {
         "name": "Motivation Theory",
         "id": "3-theoretical-foundation-motivation-theory",
+        "type": "Item",
         "parent": "2-theoretical-foundation"
       },
       {
         "name": "Behaviorism",
         "id": "3-theoretical-foundation-behaviorism",
+        "type": "Item",
         "parent": "2-theoretical-foundation"
       },
       {
         "name": "Cognitive Load Theory",
         "id": "3-theoretical-foundation-cognitive-load-theory",
+        "type": "Item",
         "parent": "2-theoretical-foundation"
       },
       {
         "name": "Flow Theory",
         "id": "3-theoretical-foundation-flow-theory",
+        "type": "Item",
         "parent": "2-theoretical-foundation"
       },
       {
         "name": "Technology Acceptance Model",
         "id": "3-theoretical-foundation-technology-acceptance-model",
+        "type": "Item",
         "parent": "2-theoretical-foundation"
       },
 
@@ -398,36 +425,44 @@
     "name": "Framework",
     "id": "2-framework",
     "type": "Category",
+    "description": "A project may use one or more frameworks (e.g., project management frameworks). A gamification\nframework can be one of these frameworks but is found seperately under \"gamification framework\" in the \"Gamification\nStrategy\" Dimension. It is important that the gamification framework does not conflict with any of the other frameworks\napplied in the project.",
     "parent": "1-project-strategy"
   },
     {
     "name": "Scrum",
     "id": "3-framework-scrum",
+    "type": "Item",
     "parent": "2-framework"
     },
     {
       "name": "Kanban",
       "id": "3-framework-kanban",
+      "type": "Item",
       "parent": "2-framework"
     },
     {
       "name": "Human Centered Design",
       "id": "3-framework-human-centered-design",
+      "type": "Item",
       "parent": "2-framework"
     },
     {
       "name": "Design Thinking",
       "id": "3-framework-design-thinking",
+      "type": "Item",
       "parent": "2-framework"
     },
     {
       "name": "PRINCE2",
       "id": "3-framework-prince2",
+      "type": "Item",
       "parent": "2-framework"
     },
     {
       "name": "Other",
       "id": "3-framework-other",
+      "type": "Item",
+      "description": "Because of the large number of possible frameworks, we only provide a few established examples. If you miss a specific important framework, please suggest its addition.",
       "parent": "2-framework"
     },
   {
