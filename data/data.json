@@ -378,7 +378,6 @@
   },
         {
           "name": "Achieve Longterm Goals",
-          "normal": { "fill": "#0391DD" },
           "id": "3-gamification-goal-longterm-goals",
           "parent": "2-gamification-goal"
         },
