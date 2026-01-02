@@ -620,7 +620,56 @@
     "parent": "2-test"
   },
 
-
+      {
+        "name": "KPIs/Metrics Analysis",
+        "id": "4-evaluation-methods-kpis-metrics-analysis",
+        "parent": "3-evaluation-methods"
+      },
+      {
+        "name": "Functional Testing",
+        "id": "4-evaluation-methods-functional-testing",
+        "parent": "3-evaluation-methods"
+      },
+      {
+        "name": "Team-internal Review",
+        "id": "4-evaluation-methods-team-internal-review",
+        "parent": "3-evaluation-methods"
+      },
+      {
+        "name": "A/B Testing",
+        "id": "4-evaluation-methods-ab-testing",
+        "parent": "3-evaluation-methods"
+      },
+      {
+        "name": "Feedback",
+        "id": "4-evaluation-methods-feedback",
+        "parent": "3-evaluation-methods"
+      },
+      {
+        "name": "Surveys/Questionnaires",
+        "id": "4-evaluation-methods-surveys-questionnaires",
+        "parent": "3-evaluation-methods"
+      },
+      {
+        "name": "Interviews",
+        "id": "4-evaluation-methods-interviews",
+        "parent": "3-evaluation-methods"
+      },
+      {
+        "name": "Focus Groups",
+        "id": "4-evaluation-methods-focus-groups",
+        "parent": "3-evaluation-methods"
+      },
+      {
+        "name": "Usability Tests",
+        "id": "4-evaluation-methods-usability-tests",
+        "parent": "3-evaluation-methods"
+      },
+      {
+        "name": "Other",
+        "id": "4-evaluation-methods-other",
+        "parent": "3-evaluation-methods"
+      },
 
   {
     "name": "Validation Methods",
