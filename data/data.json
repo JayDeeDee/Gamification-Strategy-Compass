@@ -44,139 +44,179 @@
   {
     "name": "Resources",
     "id": "2-Resources",
+    "type": "Category",
+    "description": "The resources that an organization has and assigns to a project set the potential scope of a project.\nFor gamification research, it is reasonable to document information on these aspects to ensure\nthe comparability of approaches.",
     "parent": "1-context-organization"
   },
    {
     "name": "Team",
     "id": "3-team",
+    "type": "Subcategory",
+    "description": "The team structure has a significant impact on which methods and processes are available. For\nexample, some methods require a minimum number of team members or specific skills.",
     "parent": "2-Resources"
   },
-          {"name": "size",
+          {"name": "Size",
            "id": "4-team-size",
+           "type": "Subcategory",
+           "description": "When documenting a project, one may give the exact number of team members or provide one\nof the following to report the team size.",
            "parent": "3-team"
           },
-                  {"name": "individual/solo",
+                  {"name": "Individual/Solo",
                   "id": "5-team-size-individual",
+                  "type": "Item",
                   "parent": "4-team-size"
                   },
-                  {"name": "small (2-5)",
+                  {"name": "Small (2-5)",
                   "id": "5-team-size-small",
+                  "type": "Item",
                   "parent": "4-team-size"
                   },
-                  {"name": "medium (6-15)",
+                  {"name": "Medium (6-15)",
                   "id": "5-team-size-medium",
+                  "type": "Item",
                   "parent": "4-team-size"
                   },
-                  {"name": "large (16-50)",
+                  {"name": "Large (16-50)",
                   "id": "5-team-size-large",
+                  "type": "Item",
                   "parent": "4-team-size"
                   },
-                  {"name": "very large (51+)",
+                  {"name": "Very Large (51+)",
                   "id": "5-team-size-very-large",
+                  "type": "Item",
                   "parent": "4-team-size"
                   },
 
-          {"name": "expertise/roles",
+          {"name": "Expertise/Roles",
            "id": "4-team-expertise",
+           "type": "Subcategory",
+           "description": "The expertise of team members can influence the project's possible approaches and outcomes.",
            "parent": "3-team"
           },
                   {"name": "Business Owner",
                   "id": "4-team-business-owner",
+                  "type": "Item",
                   "parent": "4-team-expertise"},
                   {"name": "Project Manager",
                   "id": "4-team-project-manager",
+                  "type": "Item",
                     "parent": "4-team-expertise"},
                   {"name": "Concepter",
                   "id": "4-team-concepter",
+                  "type": "Item",
                   "parent": "4-team-expertise"},
                   {"name": "Designer",
                   "id": "4-team-designer",
+                  "type": "Item",
                   "parent": "4-team-expertise"},
                   {"name": "Developer",
                   "id": "4-team-developer",
+                  "type": "Item",
                     "parent": "4-team-expertise"},
                   {"name": "Game Designer",
                   "id": "4-team-game-designer",
+                  "type": "Item",
                   "parent": "4-team-expertise"},
                   {"name": "Gamification Lead",
                   "id": "4-team-gamification-lead",
+                  "type": "Item",
                   "parent": "4-team-expertise"},
                   {"name": "Researcher",
                   "id": "4-team-researcher",
+                  "type": "Item",
                   "parent": "4-team-expertise"},
                   {"name": "Stakeholder",
                     "id": "4-team-stakeholder",
+                    "type": "Item",
                     "parent": "4-team-expertise"},
                   {"name": "QA/Tester",
                   "id": "4-team-qa-tester",
+                  "type": "Item",
                   "parent": "4-team-expertise"},
                   {"name": "Other",
                   "id": "4-team-other",
+                  "type": "Item",
+                  "description": "If you miss a specific role which is important for your project approach, please suggest its addition.",
                   "parent": "4-team-expertise"},
   {
     "name": "Time",
     "id": "3-time",
+    "type": "Subcategory",
+    "description": "The time available impacts the scope of the project, which, in turn, impacts the project and\ngamification goals and determines which gamification frameworks and methods are feasible.\nWhen reporting a project, one may give the exact time needed.",
     "parent": "2-Resources"
   },
           {
             "name": "Micro (<1 Month)",
             "id": "4-microTime",
+            "type": "Item",
             "parent": "3-time"
           },
           {
             "name": "Short (1-3 Months)",
             "id": "4-shortTime",
+            "type": "Item",
             "parent": "3-time"
           },
           {
             "name": "Medium (3-12 Months)",
             "id": "4-mediumTime",
+            "type": "Item",
             "parent": "3-time"
           },
           {
             "name": "Long (1-3 Years)",
             "id": "4-longTime",
+            "type": "Item",
             "parent": "3-time"
           },
           {
             "name": "Mega/Very Long (3+ Years)",
             "id": "4-megaTime",
+            "type": "Item",
             "parent": "3-time"
           },
   {
     "name": "Budget",
     "id": "3-budget",
+    "type": "Subcategory",
+    "description": "The budget has an impact on the scope of the project, which, in turn, impacts the project and\ngamification goals and determines which gamification frameworks and methods are feasible.",
     "parent": "2-Resources"
   },
           {
             "name": "Micro (<$10,000)",
             "id": "4-microBudget",
+            "type": "Item",
             "parent": "3-budget"
           },
           {
             "name": "Small ($10,000-$100,000)",
             "id": "4-smallBudget",
+            "type": "Item",
             "parent": "3-budget"
           },
           {
             "name": "Medium ($100,000-$1million)",
             "id": "4-mediumBudget",
+            "type": "Item",
             "parent": "3-budget"
           },
           {
             "name": "Large ($1million-$10million)",
             "id": "4-largeBudget",
+            "type": "Item",
             "parent": "3-budget"
           },
           {
             "name": "Mega (>$10million)",
             "id": "4-megaBudget",
+            "type": "Item",
             "parent": "3-budget"
           },
 
   {
     "name": "Technologies/Tools",
     "id": "3-technologies-tools",
+    "type": "Subcategory",
     "description": "Sometimes, organizations dictate which technologies (e.g., programming languages) and\ntools (e.g., project management tools) are allowed, which can influence the choice of\ngamification method. Conversely, a method may require specific tools, potentially\nleading to changes in the tools used within an organization (e.g., a specific evaluation instrument). \nBecause of the almost endless number of possible technologies and tools on the market,\nthe GSC does not provide a list at this point. This only serves as a reminder, to check\nto compatibility of your gamification strategy with the available technologies and tools.",
     "parent": "2-Resources"
   },
@@ -186,60 +226,75 @@
     "name": "Application Domain",
     "id": "2-application-domain",
     "type": "Category",
+    "description": "The thematic topic in which the gamification project takes place. This can be more broad (e.g.,\neducation) or specific (e.g., Massive Open Online Courses).",
     "parent": "1-context-organization"
   },
         {"name": "Education",
          "id": "3-education",
+         "type": "Item",
          "parent": "2-application-domain"
         },
         {"name": "Health",
          "id": "3-health",
+         "type": "Item",
          "parent": "2-application-domain"
         },
         {"name": "Business",
          "id": "3-business",
+         "type": "Item",
          "parent": "2-application-domain"
         },
         {"name": "Other",
          "id": "3-other-application-domain",
+         "type": "Item",
+         "description": "If you miss another application domain, please suggest its addition.", 
          "parent": "2-application-domain"
         },
   {
     "name": "Ethics",
     "id": "2-ethics",
     "type": "Category",
+    "description": "Besides general ethical considerations that should be taken into account for every project (e.g.,\nprivacy), some effects of gamification may raise additional ethical concerns and have to be \nconsidered separately (e.g., manipulation).",
     "parent": "1-context-organization"
   },
         {"name": "Power Dynamics and Paternalism",
          "id": "3-power-dynamics-paternalism",
+         "type": "Item",
          "parent": "2-ethics"
         },
         {"name": "Privacy and Data Protection",
          "id": "3-privacy-data-protection",
+         "type": "Item",
          "parent": "2-ethics"
         },
         {"name": "Informed Consent",
          "id": "3-informed-consent",
+         "type": "Item",
          "parent": "2-ethics"
         },
         {"name": "Addiction and Overuse",
          "id": "3-addiction-overuse",
+         "type": "Item",
          "parent": "2-ethics"
         },
         {"name": "Inclusivity and Accessibility",
          "id": "3-inclusivity-accessibility",
+         "type": "Item",
          "parent": "2-ethics"
         },
         {"name": "Cultural Sensitivity",
          "id": "3-cultural-sensitivity",
+         "type": "Item",
          "parent": "2-ethics"
         },
         {"name": "Psychological Impact/Cognitive Manipulation",
          "id": "3-psychological-impact",
+         "type": "Item",
          "parent": "2-ethics"
         },
         {"name": "Social Comparison",
          "id": "3-social-comparison",
+         "type": "Item",
          "parent": "2-ethics"
         },
 
@@ -446,6 +501,7 @@
   {
     "name": "Model",
     "id": "3-model",
+    "type": "Subcategory",
     "parent": "2-gamification-theory"
   },
 
