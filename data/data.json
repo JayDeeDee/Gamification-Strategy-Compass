@@ -306,13 +306,41 @@
     "id": "2-theoretical-foundation",
     "parent": "1-project-strategy"
   },
-  {
-    "name": " ",
-    "normal": { "fill": "#026397" },
-    "hovered": { "fill": "#026397" },
-    "id": "2-empty-theoretical-foundation",
-    "parent": "2-theoretical-foundation"
-  },
+      {
+        "name": "Constructivism",
+        "id": "3-theoretical-foundation-constructivism",
+        "parent": "2-theoretical-foundation"
+      },
+      {
+        "name": "Self-determination Theory",
+        "id": "3-theoretical-foundation-self-determination-theory",
+        "parent": "2-theoretical-foundation"
+      },
+      {
+        "name": "Motivation Theory",
+        "id": "3-theoretical-foundation-motivation-theory",
+        "parent": "2-theoretical-foundation"
+      },
+      {
+        "name": "Behaviorism",
+        "id": "3-theoretical-foundation-behaviorism",
+        "parent": "2-theoretical-foundation"
+      },
+      {
+        "name": "Cognitive Load Theory",
+        "id": "3-theoretical-foundation-cognitive-load-theory",
+        "parent": "2-theoretical-foundation"
+      },
+      {
+        "name": "Flow Theory",
+        "id": "3-theoretical-foundation-flow-theory",
+        "parent": "2-theoretical-foundation"
+      },
+      {
+        "name": "Technology Acceptance Model",
+        "id": "3-theoretical-foundation-technology-acceptance-model",
+        "parent": "2-theoretical-foundation"
+      },
 
   {
     "name": "Framework",
@@ -433,13 +461,91 @@
     "id": "2-gamification-framework",
     "parent": "1-gamification-strategy"
   },
-  {
-    "name": " ",
-    "normal": { "fill": "#026397" },
-    "hovered": { "fill": "#026397" },
-    "id": "2-empty-gamification-framework",
-    "parent": "2-gamification-framework"
-  },
+          {       
+            "name": "A Framework for Success. Di Tommasso (2011)",
+            "id": "4-gamification-framework-ditommasso-2011",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "Six steps to Gamification. Werbach and Hunter (2012)",
+            "id": "4-gamification-framework-werbach-hunter-2012",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "Gamification Framework. Marczewsky (2012)",
+            "id": "4-gamification-framework-marczewsky-2012",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "Gamification Design Process. Marache-Francisco and Brangie (2013)",
+            "id": "4-gamification-framework-marache-francisco-brangie-2013",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "Steps to Gamification. De Paz (2013)",
+            "id": "4-gamification-framework-de-paz-2013",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "Robinson and Bellotti taxonomy (2013)",
+            "id": "4-gamification-framework-robinson-bellotti-2013",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "Francisco-Aparicio et al. framework (2013) Gamification: analysis and application.",
+            "id": "4-gamification-framework-francisco-aparicio-2013",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "A moral framework for taking responsibility. Versteeg (2013)",
+            "id": "4-gamification-framework-versteeg-2013",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "Octalysis: Complete Gamification Framework. Chou (2013) (2015)",
+            "id": "4-gamification-framework-chou-2015",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "A Framework for Sustainable Gamification Impact. AlMarshedi (2015)",
+            "id": "4-gamification-framework-almarshedi-2015",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "Player Centered Design Methodology. J. Kumar (2013) Gamification at Work: Designing Engaging Business Software",
+            "id": "4-gamification-framework-kumar-2013",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "Role-Motivation-Interaction Framework. Gears et al. (2013) Gamification in business: Designing motivating solutions to problem situations",
+            "id": "4-gamification-framework-gears-2013",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "Gamification Framework model. Jacobs (2013)",
+            "id": "4-gamification-framework-jacobs-2013",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "A framework for gamification suited for marketing. Julius and Salo (2013)",
+            "id": "4-gamification-framework-julius-salo-2013",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "A Framework for Designing Gamification in the Enterprise. N. Kumar (2013)",
+            "id": "4-gamification-framework-kumar-2013",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "Gamification Model Canvas. Jiménez (2013)",
+            "id": "4-gamification-framework-jimenez-2013",
+            "parent": "3-gamification-framework"
+          },
+          {
+            "name": "Gamification development process. Herzig (2014)",
+            "id": "4-gamification-framework-herzig-2014",
+            "parent": "3-gamification-framework"
+          },
 
   {
     "name": "Tailoring",
