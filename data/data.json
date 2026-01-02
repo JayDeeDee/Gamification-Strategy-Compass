@@ -182,72 +182,58 @@
     "id": "2-application-domain",
     "parent": "1-context-organization"
   },
-  {
-    "name": " ",
-    "normal": { "fill": "#026397" },
-    "hovered": { "fill": "#026397" },
-    "id": "2-empty-application-domain",
-    "parent": "2-application-domain"
-  },
         {"name": "Education",
          "id": "3-education",
-         "parent": "2-empty-application-domain"
+         "parent": "2-application-domain"
         },
         {"name": "Health",
          "id": "3-health",
-         "parent": "2-empty-application-domain"
+         "parent": "2-application-domain"
         },
         {"name": "Business",
          "id": "3-business",
-         "parent": "2-empty-application-domain"
+         "parent": "2-application-domain"
         },
         {"name": "Other",
          "id": "3-other-application-domain",
-         "parent": "2-empty-application-domain"
+         "parent": "2-application-domain"
         },
   {
     "name": "Ethics",
     "id": "2-ethics",
     "parent": "1-context-organization"
   },
-  {
-    "name": " ",
-    "normal": { "fill": "#026397" },
-    "hovered": { "fill": "#026397" },
-    "id": "2-empty-ethics",
-    "parent": "2-ethics"
-  },
         {"name": "Power Dynamics and Paternalism",
          "id": "3-power-dynamics-paternalism",
-         "parent": "2-empty-ethics"
+         "parent": "2-ethics"
         },
         {"name": "Privacy and Data Protection",
          "id": "3-privacy-data-protection",
-         "parent": "2-empty-ethics"
+         "parent": "2-ethics"
         },
         {"name": "Informed Consent",
          "id": "3-informed-consent",
-         "parent": "2-empty-ethics"
+         "parent": "2-ethics"
         },
         {"name": "Addiction and Overuse",
          "id": "3-addiction-overuse",
-         "parent": "2-empty-ethics"
+         "parent": "2-ethics"
         },
         {"name": "Inclusivity and Accessibility",
          "id": "3-inclusivity-accessibility",
-         "parent": "2-empty-ethics"
+         "parent": "2-ethics"
         },
         {"name": "Cultural Sensitivity",
          "id": "3-cultural-sensitivity",
-         "parent": "2-empty-ethics"
+         "parent": "2-ethics"
         },
         {"name": "Psychological Impact/Cognitive Manipulation",
          "id": "3-psychological-impact",
-         "parent": "2-empty-ethics"
+         "parent": "2-ethics"
         },
         {"name": "Social Comparison",
          "id": "3-social-comparison",
-         "parent": "2-empty-ethics"
+         "parent": "2-ethics"
         },
 
 
@@ -390,59 +376,51 @@
     "id": "2-gamification-goal",
     "parent": "1-gamification-strategy"
   },
-  {
-    "name": " ",
-    "normal": { "fill": "#026397" },
-    "hovered": { "fill": "#026397" },
-    "id": "2-empty-gamification-goal",
-    "parent": "2-gamification-goal"
-  },
-
         {
           "name": "Achieve Longterm Goals",
           "normal": { "fill": "#0391DD" },
           "id": "3-gamification-goal-longterm-goals",
-          "parent": "2-empty-gamification-goal"
+          "parent": "2-gamification-goal"
         },
         {"name": "Address Emotions",
          "id": "3-gamification-goal-address-emotions",
-         "parent": "2-empty-gamification-goal"
+         "parent": "2-gamification-goal"
         },
         {"name": "Create Positive UX",
          "id": "3-gamification-goal-create-positive-ux",
-         "parent": "2-empty-gamification-goal"
+         "parent": "2-gamification-goal"
         },
         {"name": "Encourage Behavior Change",
          "id": "3-gamification-goal-encourage-behavior-change",
-         "parent": "2-empty-gamification-goal"
+         "parent": "2-gamification-goal"
         },
         {"name": "Enhance Motivation",
          "id": "3-gamification-goal-",
-         "parent": "2-empty-gamification-goal"
+         "parent": "2-gamification-goal"
         },
         {"name": "Enhance Processes",
          "id": "3-gamification-goal-enhance-processes",
-         "parent": "2-empty-gamification-goal"
+         "parent": "2-gamification-goal"
         },
         {"name": "Make Success Measurable",
          "id": "3-gamification-goal-",
-         "parent": "2-empty-gamification-goal"
+         "parent": "2-gamification-goal"
         },
         {"name": "Researching Gamification",
          "id": "3-gamification-goal-researching-gamification",
-         "parent": "2-empty-gamification-goal"
+         "parent": "2-gamification-goal"
         },
         {"name": "Stimulate Interest",
          "id": "3-gamification-goal-stimulate-interest",
-         "parent": "2-empty-gamification-goal"
+         "parent": "2-gamification-goal"
         },
         { "name": "Support teaching/learning",
           "id": "3-gamification-goal-support-teaching",
-          "parent": "2-empty-gamification-goal"
+          "parent": "2-gamification-goal"
         },
         {"name": "Other",
          "id": "3-gamification-goal-other",
-         "parent": "2-empty-gamification-goal"
+         "parent": "2-gamification-goal"
         },
         
   {
