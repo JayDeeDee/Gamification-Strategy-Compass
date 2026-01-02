@@ -10,13 +10,15 @@
     "normal": { "fill": "#4D7796" },
     "id": "1-context-organization",
     "type": "Dimension",
-    "description": "It includes all aspects that may influence \nthe gamification strategy and are defined\nor impacted by the organizational structure.",
+    "description": "This Dimension includes all aspects that may influence \nthe gamification strategy and are defined\nor impacted by the organizational structure.",
     "parent": "0-title"
   },
 
   {
     "name": "Organizational Goal",
     "id": "2-organizational-goal",
+    "type": "Category",
+    "description": "The organizational goal can also be called a business incentive. Each organization has one or\nmore goals they want to achieve. These can be long-term, mid-term, or short-term and can be\nmore broad (e.g., financial profit) or specific (e.g., increase the number of users by 10%).",
     "parent": "1-context-organization"
   },
           {
@@ -180,6 +182,7 @@
   {
     "name": "Application Domain",
     "id": "2-application-domain",
+    "type": "Category",
     "parent": "1-context-organization"
   },
         {"name": "Education",
@@ -201,6 +204,7 @@
   {
     "name": "Ethics",
     "id": "2-ethics",
+    "type": "Category",
     "parent": "1-context-organization"
   },
         {"name": "Power Dynamics and Paternalism",
@@ -248,6 +252,7 @@
   {
     "name": "Project Goal",
     "id": "2-project-goal",
+    "type": "Category",
     "parent": "1-project-strategy"
   },
           
@@ -292,6 +297,7 @@
   {
     "name": "Theoretical Foundation",
     "id": "2-theoretical-foundation",
+    "type": "Category",
     "parent": "1-project-strategy"
   },
       {
@@ -333,6 +339,7 @@
   {
     "name": "Framework",
     "id": "2-framework",
+    "type": "Category",
     "parent": "1-project-strategy"
   },
     {
@@ -378,6 +385,7 @@
   {
     "name": "Gamification Goal",
     "id": "2-gamification-goal",
+    "type": "Category",
     "parent": "1-gamification-strategy"
   },
         {
@@ -429,6 +437,7 @@
   {
     "name": "Gamification Theory",
     "id": "2-gamification-theory",
+    "type": "Category",
     "parent": "1-gamification-strategy"
   },
   {
@@ -440,6 +449,7 @@
   {
     "name": "Gamification Framework",
     "id": "2-gamification-framework",
+    "type": "Category",
     "parent": "1-gamification-strategy"
   },
           {       
@@ -531,6 +541,7 @@
   {
     "name": "Tailoring",
     "id": "2-tailoring",
+    "type": "Category",
     "parent": "1-gamification-strategy"
   },
 
@@ -690,6 +701,7 @@
   {
     "name": "Test",
     "id": "2-test",
+    "type": "Category",
     "parent": "1-gamification-strategy"
   },
 
