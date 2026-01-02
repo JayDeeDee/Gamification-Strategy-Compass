@@ -626,6 +626,81 @@
         "parent": "3-evaluation-methods"
       },
       {
+        "name": "A/B Testing",
+        "id": "4-evaluation-methods-ab-testing",
+        "parent": "3-evaluation-methods"
+      },
+        {
+          "name": "non-gamified vs. gamified",
+          "id": "5-evaluation-methods-ab-testing-non-gamified-vs-gamified",
+          "parent": "4-evaluation-methods-ab-testing"
+        },
+        {
+          "name": "swap single game elements",
+          "id": "5-evaluation-methods-ab-testing-swap-single-game-elements",
+          "parent": "4-evaluation-methods-ab-testing"
+        },
+        {
+          "name": "personalizes vs. non-personalized",
+          "id": "5-evaluation-methods-ab-testing-personalized-vs-non-personalized",
+          "parent": "4-evaluation-methods-ab-testing"
+        },
+      {
+        "name": "Surveys/Questionnaires",
+        "id": "4-evaluation-methods-surveys-questionnaires",
+        "parent": "3-evaluation-methods"
+      },
+          {
+            "name": "Short Flow State Scale-2. Jackson et al. (2002)",
+            "id": "5-evaluation-methods-surveys-questionnaires-short-flow-state-scale-2",
+            "parent": "4-evaluation-methods-surveys-questionnaires"
+          },
+          {
+            "name": "Four questions adjusted by Agarwal et al. (1997)",
+            "id": "5-evaluation-methods-surveys-questionnaires-four-questions-adjusted-by-agarwal-et-al-1997",
+            "parent": "4-evaluation-methods-surveys-questionnaires"
+          },
+          {
+            "name": "Game experience Questionnaire. Ijsselsteijn et al. (2013)",
+            "id": "5-evaluation-methods-surveys-questionnaires-game-experience-questionnaire-ijsselsteijn-et-al-2013",
+            "parent": "4-evaluation-methods-surveys-questionnaires"
+          },
+          {
+            "name": "Dispositional Flow State Scale-2. Jackson et al. (2002)",
+            "id": "5-evaluation-methods-surveys-questionnaires-dispositional-flow-state-scale-2-jackson-et-al-2002",
+            "parent": "4-evaluation-methods-surveys-questionnaires"
+          },
+          {
+            "name": "Q sorts questionnaire adapted from Van Exel et al. (2005)",
+            "id": "5-evaluation-methods-surveys-questionnaires-q-sorts-questionnaire-adapted-from-van-exel-et-al-2005",
+            "parent": "4-evaluation-methods-surveys-questionnaires"
+          },
+          {
+            "name": "Flow Questionnaire. Csikszentmihalyi et al. (2014)",
+            "id": "5-evaluation-methods-surveys-questionnaires-flow-questionnaire-csikszentmihalyi-et-al-2014",
+            "parent": "4-evaluation-methods-surveys-questionnaires"
+          },
+          {
+            "name": "Experience sampling method. Larson et al. (2014)",
+            "id": "5-evaluation-methods-surveys-questionnaires-experience-sampling-method-larson-et-al-2014",
+            "parent": "4-evaluation-methods-surveys-questionnaires"
+          },
+          {
+            "name": "Multidimensional measurement. Mahfouz et al. (2011)",
+            "id": "5-evaluation-methods-surveys-questionnaires-multidimensional-measurement-mahfouz-et-al-2011",
+            "parent": "4-evaluation-methods-surveys-questionnaires"
+          },
+          {
+            "name": "Other",
+            "id": "5-evaluation-methods-surveys-questionnaires-other",
+            "parent": "4-evaluation-methods-surveys-questionnaires"
+          },
+      {
+        "name": "Usability Tests",
+        "id": "4-evaluation-methods-usability-tests",
+        "parent": "3-evaluation-methods"
+      },
+      {
         "name": "Functional Testing",
         "id": "4-evaluation-methods-functional-testing",
         "parent": "3-evaluation-methods"
@@ -636,18 +711,8 @@
         "parent": "3-evaluation-methods"
       },
       {
-        "name": "A/B Testing",
-        "id": "4-evaluation-methods-ab-testing",
-        "parent": "3-evaluation-methods"
-      },
-      {
         "name": "Feedback",
         "id": "4-evaluation-methods-feedback",
-        "parent": "3-evaluation-methods"
-      },
-      {
-        "name": "Surveys/Questionnaires",
-        "id": "4-evaluation-methods-surveys-questionnaires",
         "parent": "3-evaluation-methods"
       },
       {
@@ -658,11 +723,6 @@
       {
         "name": "Focus Groups",
         "id": "4-evaluation-methods-focus-groups",
-        "parent": "3-evaluation-methods"
-      },
-      {
-        "name": "Usability Tests",
-        "id": "4-evaluation-methods-usability-tests",
         "parent": "3-evaluation-methods"
       },
       {
