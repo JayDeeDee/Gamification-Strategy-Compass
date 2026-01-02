@@ -9,7 +9,7 @@
     "name": "Context and Organization",
     "normal": { "fill": "#4D7796" },
     "id": "1-context-organization",
-    "type": "dimension",
+    "type": "Dimension",
     "description": "It includes all aspects that may influence \nthe gamification strategy and are defined\nor impacted by the organizational structure.",
     "parent": "0-title"
   },
@@ -241,6 +241,8 @@
     "name": "Project Strategy",
     "normal": { "fill": "#587853" },
     "id": "1-project-strategy",
+    "type": "Dimension",
+    "description": "This dimension includes all aspects determined by the surrounding project. These aspects are not\nnecessarily influenced by the decision-makers responsible for gamification. However, they can\nstill affect the choice of gamification strategy.",
     "parent": "0-title"
   },
   {
@@ -367,6 +369,8 @@
     "name": "Gamification Strategy",
     "normal": { "fill": "#E4A761" },
     "id": "1-gamification-strategy",
+    "type": "Dimension",
+    "description": "This dimension includes all aspects related to the actual implementation of gamification, often\nreferred to as the “Gamification Approach.” The gamification strategy outlines the holistic\nprocess of implementing and integrating gamification into a project, from concept to testing. It is\nembedded within the overall project strategy and the organizational context.",
     "parent": "0-title"
   },
 
