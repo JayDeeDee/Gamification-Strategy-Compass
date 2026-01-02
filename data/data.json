@@ -328,13 +328,35 @@
     "parent": "1-project-strategy"
   },
     {
-    "name": " ",
-    "normal": { "fill": "#026397" },
-    "hovered": { "fill": "#026397" },
-    "id": "2-empty-framework",
+    "name": "Scrum",
+    "id": "3-framework-scrum",
     "parent": "2-framework"
-  },
-
+    },
+    {
+      "name": "Kanban",
+      "id": "3-framework-kanban",
+      "parent": "2-framework"
+    },
+    {
+      "name": "Human Centered Design",
+      "id": "3-framework-human-centered-design",
+      "parent": "2-framework"
+    },
+    {
+      "name": "Design Thinking",
+      "id": "3-framework-design-thinking",
+      "parent": "2-framework"
+    },
+    {
+      "name": "PRINCE2",
+      "id": "3-framework-prince2",
+      "parent": "2-framework"
+    },
+    {
+      "name": "Other",
+      "id": "3-framework-other",
+      "parent": "2-framework"
+    },
   {
     "name": "Gamification Strategy",
     "normal": { "fill": "#E4A761" },
