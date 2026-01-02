@@ -172,7 +172,7 @@
   {
     "name": "Technologies/Tools",
     "id": "3-technologies-tools",
-    "description": "Sometimes, organizations dictate which technologies (e.g., programming languages) and\ntools (e.g., project management tools) are allowed, which can influence the choice of\ngamification method. Conversely, a method may require specific tools, potentially\nleading to changes in the tools used within an organization (e.g., a specific evaluation instrument). \nBecause of the almost endless number of possible technologies and tools on the market,\nthe GSC does not provide a list at this point. This only serves as a reminder, to check\nto compatibility of your gamification strategy with the available technologies and tools.",
+    "description": "Sometimes, organizations dictate which technologies (*e.g.*, **programming languages**) and\ntools (e.g., project management tools) are allowed, which can influence the choice of\ngamification method. Conversely, a method may require specific tools, potentially\nleading to changes in the tools used within an organization (e.g., a specific evaluation instrument). \nBecause of the almost endless number of possible technologies and tools on the market,\nthe GSC does not provide a list at this point. This only serves as a reminder, to check\nto compatibility of your gamification strategy with the available technologies and tools.",
     "parent": "2-Resources"
   },
 
