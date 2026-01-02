@@ -479,51 +479,64 @@
     "name": "Gamification Goal",
     "id": "2-gamification-goal",
     "type": "Category",
+    "description": "The gamification goal should support the project goal. For example, a learning application has\nthe goal of teaching something, while the gamification goal would be something such as\nmotivating the learners to keep learning.",
     "parent": "1-gamification-strategy"
   },
         {
           "name": "Achieve Longterm Goals",
           "id": "3-gamification-goal-longterm-goals",
+          "type": "Item",
           "parent": "2-gamification-goal"
         },
         {"name": "Address Emotions",
          "id": "3-gamification-goal-address-emotions",
+         "type": "Item",
          "parent": "2-gamification-goal"
         },
         {"name": "Create Positive UX",
          "id": "3-gamification-goal-create-positive-ux",
+         "type": "Item",
          "parent": "2-gamification-goal"
         },
         {"name": "Encourage Behavior Change",
          "id": "3-gamification-goal-encourage-behavior-change",
+         "type": "Item",
          "parent": "2-gamification-goal"
         },
         {"name": "Enhance Motivation",
-         "id": "3-gamification-goal-",
+         "id": "3-gamification-goal-enhance-motivation",
+         "type": "Item",
          "parent": "2-gamification-goal"
         },
         {"name": "Enhance Processes",
          "id": "3-gamification-goal-enhance-processes",
+         "type": "Item",
          "parent": "2-gamification-goal"
         },
         {"name": "Make Success Measurable",
-         "id": "3-gamification-goal-",
+         "id": "3-gamification-goal-make-success-measurable",
+         "type": "Item",
          "parent": "2-gamification-goal"
         },
         {"name": "Researching Gamification",
          "id": "3-gamification-goal-researching-gamification",
+          "type": "Item",
          "parent": "2-gamification-goal"
         },
         {"name": "Stimulate Interest",
          "id": "3-gamification-goal-stimulate-interest",
+          "type": "Item",
          "parent": "2-gamification-goal"
         },
         { "name": "Support teaching/learning",
           "id": "3-gamification-goal-support-teaching",
+          "type": "Item",
           "parent": "2-gamification-goal"
         },
         {"name": "Other",
          "id": "3-gamification-goal-other",
+          "type": "Item",
+          "description": "If you miss another gamification goal, please suggest its addition.",
          "parent": "2-gamification-goal"
         },
         
@@ -531,42 +544,50 @@
     "name": "Gamification Theory",
     "id": "2-gamification-theory",
     "type": "Category",
+    "description": "The gamification theory is the theoretical foundation of the gamification strategy. It should also\nbe the basis of or compatible with the gamification framework. It can be derived from a general\ntheoretical foundation (e.g., a learning theory) and may be some form of model. Gamification\ntheories are highly theoretical and do not provide clear guidance to designers for choosing the\nright set of game elements.",
     "parent": "1-gamification-strategy"
   },
       {
         "name": "Deterding's Definition of Gamification",
         "id": "3-gamification-theory-deterding",
+        "type": "Item",
         "parent": "2-gamification-theory"
       },
       {
         "name": "Werbach's (Re)defining Gamification",
         "id": "3-gamification-theory-werbach",
+        "type": "Item",
         "parent": "2-gamification-theory"
       },
       {
         "name": "Lander's Theory of gamified learning",
         "id": "3-gamification-theory-landers",
+        "type": "Item",
         "parent": "2-gamification-theory"
       },
       {
         "name": "Huotari and Hamari's definition of gamification",
         "id": "3-gamification-theory-huotari-hamari",
+        "type": "Item",
         "parent": "2-gamification-theory"
       },
       {
         "name": "Staller's non-definition of gamification",
         "id": "3-gamification-theory-staller",
+        "type": "Item",
         "parent": "2-gamification-theory"
       },
       {
         "name": "Other",
         "id": "3-gamification-theory-other",
+        "type": "Item",
         "parent": "2-gamification-theory"
       },
   {
     "name": "Model",
     "id": "3-model",
     "type": "Subcategory",
+    "description": "A gamification theory that is some form of theoretical model. Models are abstractions that are\nsupposed to represent complex contexts. It includes specification of the concepts, relationships,\nand rules within the concept.",
     "parent": "2-gamification-theory"
   },
 
@@ -574,91 +595,109 @@
     "name": "Gamification Framework",
     "id": "2-gamification-framework",
     "type": "Category",
+    "description": "A structure intended to guide or support the design and integration of gamification. It predominantly\nis used to choose specific game elements. It may also be called a “gamification design\nframework.” It should build upon a gamification theory and can include tailoring and evaluation\nmethods. A gamification framework has several attributes (e.g., level of guidance). It can\nrecommend specific tools and techniques and is part of the gamification strategy.",
     "parent": "1-gamification-strategy"
   },
           {       
             "name": "A Framework for Success. Di Tommasso (2011)",
             "id": "3-gamification-framework-ditommasso-2011",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "Six steps to Gamification. Werbach and Hunter (2012)",
             "id": "3-gamification-framework-werbach-hunter-2012",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "Gamification Framework. Marczewsky (2012)",
             "id": "3-gamification-framework-marczewsky-2012",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "Gamification Design Process. Marache-Francisco and Brangie (2013)",
             "id": "3-gamification-framework-marache-francisco-brangie-2013",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "Steps to Gamification. De Paz (2013)",
             "id": "3-gamification-framework-de-paz-2013",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "Robinson and Bellotti taxonomy (2013)",
             "id": "3-gamification-framework-robinson-bellotti-2013",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "Francisco-Aparicio et al. framework (2013) Gamification: analysis and application.",
             "id": "3-gamification-framework-francisco-aparicio-2013",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "A moral framework for taking responsibility. Versteeg (2013)",
             "id": "3-gamification-framework-versteeg-2013",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "Octalysis: Complete Gamification Framework. Chou (2013) (2015)",
             "id": "3-gamification-framework-chou-2015",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "A Framework for Sustainable Gamification Impact. AlMarshedi (2015)",
             "id": "3-gamification-framework-almarshedi-2015",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "Player Centered Design Methodology. J. Kumar (2013) Gamification at Work: Designing Engaging Business Software",
             "id": "3-gamification-framework-kumar-2013",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "Role-Motivation-Interaction Framework. Gears et al. (2013) Gamification in business: Designing motivating solutions to problem situations",
             "id": "3-gamification-framework-gears-2013",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "Gamification Framework model. Jacobs (2013)",
             "id": "3-gamification-framework-jacobs-2013",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "A framework for gamification suited for marketing. Julius and Salo (2013)",
             "id": "3-gamification-framework-julius-salo-2013",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "A Framework for Designing Gamification in the Enterprise. N. Kumar (2013)",
             "id": "3-gamification-framework-kumar-2013",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "Gamification Model Canvas. Jiménez (2013)",
             "id": "3-gamification-framework-jimenez-2013",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
           {
             "name": "Gamification development process. Herzig (2014)",
             "id": "3-gamification-framework-herzig-2014",
+            "type": "Item",
             "parent": "2-gamification-framework"
           },
 
@@ -666,367 +705,451 @@
     "name": "Tailoring",
     "id": "2-tailoring",
     "type": "Category",
+    "description": "All impact factors that need to be considered for customizing the gamification to the users are\nsorted into this category.",
     "parent": "1-gamification-strategy"
   },
 
   {
     "name": "Tailoring Focus",
     "id": "3-tailoring-focus",
+    "type": "Subcategory",
+    "description": "Since it is impossible to take everything into account when customizing gamification for users,\nthe tailoring should focus on certain points. These focus points consider some aspect of the users\n(e.g., characteristics, player typology, or demographics).",
     "parent": "2-tailoring"
   },
             {
               "name": "Player Typology",
               "id": "4-tailoring-focus-player-typology",
+              "type": "Subcategory",
+              "description": "Different player typologies have been developed to categorize users based on their gaming\npreferences and behaviors.",
               "parent": "3-tailoring-focus"
             },
                   {
                     "name": "Bartle",
                     "id": "5-tailoring-focus-player-typology-bartle",
+                    "type": "Item",
                     "parent": "4-tailoring-focus-player-typology"
                   },
                   {
                     "name": "Hexad",
                     "id": "5-tailoring-focus-player-typology-hexad",
+                    "type": "Item",
                     "parent": "4-tailoring-focus-player-typology"
                   },
                   {
                     "name": "BrainHex",
                     "id": "5-tailoring-focus-player-typology-brainhex",
+                    "type": "Item",
                     "parent": "4-tailoring-focus-player-typology"
                   },
                   {
                     "name": "Ferro",
                     "id": "5-tailoring-focus-player-typology-ferro",
+                    "type": "Item",
                     "parent": "4-tailoring-focus-player-typology"
                   },
                   {
                     "name": "Four Student Profiles of Barata et al.",
                     "id": "5-tailoring-focus-player-typology-barata",
+                    "type": "Item",
                     "parent": "4-tailoring-focus-player-typology"
                   },
                   {
                     "name": "Five Player Roles of Borges et al.",
                     "id": "5-tailoring-focus-player-typology-borges",
+                    "type": "Item",
                     "parent": "4-tailoring-focus-player-typology"
                   },
 
            {
               "name": "Personality Traits",
               "id": "4-tailoring-focus-personality-traits",
+              "type": "Subcategory",
+              "description": "Personality traits can influence how users interact with gamified systems and what\nmotivates them.",
               "parent": "3-tailoring-focus"
             },
                 {
                   "name": "Big Five/OCEAN",
                   "id": "5-tailoring-focus-personality-traits-big-five",
+                  "type": "Item",
                   "parent": "4-tailoring-focus-personality-traits"
                 },
                 {
                   "name": "Myer-Briggs Type Indicator (MBTI)",
                   "id": "5-tailoring-focus-personality-traits-mbti",
+                  "type": "Item",
                   "parent": "4-tailoring-focus-personality-traits"
                 },
                 {
                   "name": "Goal Orientation Theory",
                   "id": "5-tailoring-focus-personality-traits-goal-orientation",
+                  "type": "Item",
                   "parent": "4-tailoring-focus-personality-traits"
                 },
                 {
                   "name": "Murray's Secondary Psychological Needs",
                   "id": "5-tailoring-focus-personality-traits-murray-secondary-psy",
+                  "type": "Item",
                   "parent": "4-tailoring-focus-personality-traits"
                 },
 
             {
               "name": "Gender",
               "id": "4-tailoring-focus-gender",
+              "type": "Item",
               "parent": "3-tailoring-focus"
             },
             {
               "name": "Age",
               "id": "4-tailoring-focus-age",
+              "type": "Item",
               "parent": "3-tailoring-focus"
             },
             {
               "name": "Culture",
               "id": "4-tailoring-focus-culture",
+              "type": "Item",
               "parent": "3-tailoring-focus"
             },
             
             {
               "name": "Motivation",
               "id": "4-tailoring-focus-motivation",
+              "type": "Item",
               "parent": "3-tailoring-focus"
             },
             {
               "name": "Behavior",
               "id": "4-tailoring-focus-behavior",
+              "type": "Item",
               "parent": "3-tailoring-focus"
             },
             {
               "name": "Pedagogical Profile",
               "id": "4-tailoring-focus-pedagogical-profile",
+              "type": "Item",
               "parent": "3-tailoring-focus"
             },
             {
               "name": "Performance",
               "id": "4-tailoring-focus-performance",
+              "type": "Item",
               "parent": "3-tailoring-focus"
             },
   {
     "name": "Tailoring Methods",
     "id": "3-tailoring-methods",
+    "type": "Subcategory",
+    "description": "Various methods are available to achieve some form of customization for the users (e.g., adaptive\ngamification).",
     "parent": "2-tailoring"
   },
       {
         "name": "Adaptive Gamification",
         "id": "4-tailoring-methods-adaptive-gamification",
+        "type": "Subcategory",
+        "description": "Adaptive gamification dynamically adjusts game elements and mechanics based on user data and\nbehavior to enhance engagement and effectiveness.",
         "parent": "3-tailoring-methods"
       },
-      {
-        "name": "CN2 Rule Induction Algorithm",
-        "id": "5-tailoring-methods-adaptive-cn2-rule-induction",
-        "parent": "4-tailoring-methods-adaptive-gamification"
-      },
-      {
-        "name": "K-means Clustering",
-        "id": "5-tailoring-methods-adaptive-kmeans-clustering",
-        "parent": "4-tailoring-methods-adaptive-gamification"
-      },
-      {
-        "name": "Interpretive Structure Model",
-        "id": "5-tailoring-methods-adaptive-interpretive-structure-model",
-        "parent": "4-tailoring-methods-adaptive-gamification"
-      },
-      {
-        "name": "Two-Step Cluster Analysis",
-        "id": "5-tailoring-methods-adaptive-two-step-cluster-analysis",
-        "parent": "4-tailoring-methods-adaptive-gamification"
-      },
-      {
-        "name": "Intelligent Tutorial System",
-        "id": "5-tailoring-methods-adaptive-intelligent-tutorial-system",
-        "parent": "4-tailoring-methods-adaptive-gamification"
-      },
-      {
-        "name": "SmartSparrow (Adaptive e-Learning Platform - AeLP)",
-        "id": "5-tailoring-methods-adaptive-smartsparrow",
-        "parent": "4-tailoring-methods-adaptive-gamification"
-      },
-      {
-        "name": "BrainHex Test",
-        "id": "5-tailoring-methods-adaptive-brainhex-test",
-        "parent": "4-tailoring-methods-adaptive-gamification"
-      },
-      {
-        "name": "Adaptive Web-based learning environment",
-        "id": "5-tailoring-methods-adaptive-web-based-learning-environment",
-        "parent": "4-tailoring-methods-adaptive-gamification"
-      },
+            {
+              "name": "CN2 Rule Induction Algorithm",
+              "id": "5-tailoring-methods-adaptive-cn2-rule-induction",
+              "type": "Item",
+              "parent": "4-tailoring-methods-adaptive-gamification"
+            },
+            {
+              "name": "K-means Clustering",
+              "id": "5-tailoring-methods-adaptive-kmeans-clustering",
+              "type": "Item",
+              "parent": "4-tailoring-methods-adaptive-gamification"
+            },
+            {
+              "name": "Interpretive Structure Model",
+              "id": "5-tailoring-methods-adaptive-interpretive-structure-model",
+              "type": "Item",
+              "parent": "4-tailoring-methods-adaptive-gamification"
+            },
+            {
+              "name": "Two-Step Cluster Analysis",
+              "id": "5-tailoring-methods-adaptive-two-step-cluster-analysis",
+              "type": "Item",
+              "parent": "4-tailoring-methods-adaptive-gamification"
+            },
+            {
+              "name": "Intelligent Tutorial System",
+              "id": "5-tailoring-methods-adaptive-intelligent-tutorial-system",
+              "type": "Item",
+              "parent": "4-tailoring-methods-adaptive-gamification"
+            },
+            {
+              "name": "SmartSparrow (Adaptive e-Learning Platform - AeLP)",
+              "id": "5-tailoring-methods-adaptive-smartsparrow",
+              "type": "Item",
+              "parent": "4-tailoring-methods-adaptive-gamification"
+            },
+            {
+              "name": "BrainHex Test",
+              "id": "5-tailoring-methods-adaptive-brainhex-test",
+              "type": "Item",
+              "parent": "4-tailoring-methods-adaptive-gamification"
+            },
+            {
+              "name": "Adaptive Web-based learning environment",
+              "id": "5-tailoring-methods-adaptive-web-based-learning-environment",
+              "type": "Item",
+              "parent": "4-tailoring-methods-adaptive-gamification"
+            },
   {
     "name": "Test",
     "id": "2-test",
     "type": "Category",
+    "description": "All impact factors that need to be considered in the testing phase are sorted into this category.\nThis includes evaluation as well as validation.",
     "parent": "1-gamification-strategy"
   },
 
   {
     "name": "Evaluation Dimensions",
     "id": "3-evaluation-dimensions",
+    "type": "Subcategory",
+    "description": "Aspects that need to be considered when evaluating the gamification. Can overlap with the\nevaluation of the overarching project (e.g., user experience) but can also be more specific to the\ngamification (e.g., attractiveness of the game elements).",
     "parent": "2-test"
   },
 
       {
         "name": "User Satisfaction",
         "id": "4-evaluation-dimensions-user-satisfaction",
+        "type": "Item",
         "parent": "3-evaluation-dimensions"
       },
       {
         "name": "User Experience",
         "id": "4-evaluation-dimensions-user-experience",
+        "type": "Item",
         "parent": "3-evaluation-dimensions"
       },
       {
         "name": "User Preferences",
         "id": "4-evaluation-dimensions-user-preferences",
+        "type": "Item",
         "parent": "3-evaluation-dimensions"
       },
       {
         "name": "Completion/Participation Rates",
         "id": "4-evaluation-dimensions-completion-rates",
+        "type": "Item",
         "parent": "3-evaluation-dimensions"
       },
       {
         "name": "Accessibility",
         "id": "4-evaluation-dimensions-accessibility",
+        "type": "Item",
         "parent": "3-evaluation-dimensions"
       },
       {
         "name": "Usability",
         "id": "4-evaluation-dimensions-usability",
+        "type": "Item",
         "parent": "3-evaluation-dimensions"
       },
       {
         "name": "Feasibility",
         "id": "4-evaluation-dimensions-feasibility",
+        "type": "Item",
         "parent": "3-evaluation-dimensions"
       },
       {
         "name": "Safety",
         "id": "4-evaluation-dimensions-safety",
+        "type": "Item",
         "parent": "3-evaluation-dimensions"
       },
       {
         "name": "Self-management Behavior Record",
         "id": "4-evaluation-dimensions-self-management-behavior-record",
+        "type": "Item",
         "parent": "3-evaluation-dimensions"
       },
       {
         "name": "Economic Cost",
         "id": "4-evaluation-dimensions-economic-cost",
+        "type": "Item",
         "parent": "3-evaluation-dimensions"
       },
       {
         "name": "Learning Performance",
         "id": "4-evaluation-dimensions-learning-performance",
+        "type": "Item",
         "parent": "3-evaluation-dimensions"
       },
       {
         "name": "Other",
         "id": "4-evaluation-dimensions-other",
+        "type": "Item",
+        "description": "If you miss another evaluation dimension, please suggest its addition.",
         "parent": "3-evaluation-dimensions"
       },
 
   {
     "name": "Evaluation Methods",
     "id": "3-evaluation-methods",
+    "type": "Subcategory",
+    "description": "Methods that evaluate one or more evaluative dimensions. These check how well the gamification\nworks or how effective it is.",
     "parent": "2-test"
   },
 
       {
         "name": "KPIs/Metrics Analysis",
         "id": "4-evaluation-methods-kpis-metrics-analysis",
+        "type": "Subcategory",
         "parent": "3-evaluation-methods"
       },
       {
         "name": "A/B Testing",
         "id": "4-evaluation-methods-ab-testing",
+        "type": "Subcategory",
+        "description": "A/B testing, also known as split testing, is a method of comparing two versions of a webpage\nor app against each other to determine which one performs better.",
         "parent": "3-evaluation-methods"
       },
         {
           "name": "non-gamified vs. gamified",
           "id": "5-evaluation-methods-ab-testing-non-gamified-vs-gamified",
+          "type": "Item",
           "parent": "4-evaluation-methods-ab-testing"
         },
         {
           "name": "swap single game elements",
           "id": "5-evaluation-methods-ab-testing-swap-single-game-elements",
+          "type": "Item",
           "parent": "4-evaluation-methods-ab-testing"
         },
         {
           "name": "personalizes vs. non-personalized",
           "id": "5-evaluation-methods-ab-testing-personalized-vs-non-personalized",
+          "type": "Item",
           "parent": "4-evaluation-methods-ab-testing"
         },
       {
         "name": "Surveys/Questionnaires",
         "id": "4-evaluation-methods-surveys-questionnaires",
+        "type": "Subcategory",
+        "description": "Surveys and questionnaires are structured tools used to collect data from participants about\ntheir experiences, perceptions, and attitudes towards the gamified system. They offer a\nsystematic way to gather quantitative and qualitative feedback, enabling researchers\nto assess various aspects of user engagement, satisfaction, and the overall effectiveness of\nthe gamification elements implemented. Some Questionnaires can help asssessing a specific KPI.",
         "parent": "3-evaluation-methods"
       },
           {
             "name": "Short Flow State Scale-2. Jackson et al. (2002)",
             "id": "5-evaluation-methods-surveys-questionnaires-short-flow-state-scale-2",
+            "type": "Item",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
             "name": "Four questions adjusted by Agarwal et al. (1997)",
             "id": "5-evaluation-methods-surveys-questionnaires-four-questions-adjusted-by-agarwal-et-al-1997",
+            "type": "Item",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
             "name": "Game experience Questionnaire. Ijsselsteijn et al. (2013)",
             "id": "5-evaluation-methods-surveys-questionnaires-game-experience-questionnaire-ijsselsteijn-et-al-2013",
+            "type": "Item",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
             "name": "Dispositional Flow State Scale-2. Jackson et al. (2002)",
             "id": "5-evaluation-methods-surveys-questionnaires-dispositional-flow-state-scale-2-jackson-et-al-2002",
+            "type": "Item",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
             "name": "Q sorts questionnaire adapted from Van Exel et al. (2005)",
             "id": "5-evaluation-methods-surveys-questionnaires-q-sorts-questionnaire-adapted-from-van-exel-et-al-2005",
+            "type": "Item",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
             "name": "Flow Questionnaire. Csikszentmihalyi et al. (2014)",
             "id": "5-evaluation-methods-surveys-questionnaires-flow-questionnaire-csikszentmihalyi-et-al-2014",
+            "type": "Item",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
             "name": "Experience sampling method. Larson et al. (2014)",
             "id": "5-evaluation-methods-surveys-questionnaires-experience-sampling-method-larson-et-al-2014",
+            "type": "Item",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
             "name": "Multidimensional measurement. Mahfouz et al. (2011)",
             "id": "5-evaluation-methods-surveys-questionnaires-multidimensional-measurement-mahfouz-et-al-2011",
+            "type": "Item",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
             "name": "Other",
             "id": "5-evaluation-methods-surveys-questionnaires-other",
+            "type": "Item",
+            "description": "If you miss another survey/questionnaire, please suggest its addition.",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
       {
         "name": "Usability Tests",
         "id": "4-evaluation-methods-usability-tests",
+        "type": "Item",
         "parent": "3-evaluation-methods"
       },
       {
         "name": "Functional Testing",
         "id": "4-evaluation-methods-functional-testing",
+        "type": "Item",
         "parent": "3-evaluation-methods"
       },
       {
         "name": "Team-internal Review",
         "id": "4-evaluation-methods-team-internal-review",
+        "type": "Item",
         "parent": "3-evaluation-methods"
       },
       {
         "name": "Feedback",
         "id": "4-evaluation-methods-feedback",
+        "type": "Item",
         "parent": "3-evaluation-methods"
       },
       {
         "name": "Interviews",
         "id": "4-evaluation-methods-interviews",
+        "type": "Item",
         "parent": "3-evaluation-methods"
       },
       {
         "name": "Focus Groups",
         "id": "4-evaluation-methods-focus-groups",
+        "type": "Item",
         "parent": "3-evaluation-methods"
       },
       {
         "name": "Other",
         "id": "4-evaluation-methods-other",
+        "type": "Item",
+        "description": "If you miss another evaluation method, please suggest its addition.",
         "parent": "3-evaluation-methods"
       },
 
   {
     "name": "Validation Methods",
     "id": "3-validation-methods",
+    "type": "Subcategory",
+    "description": "Methods that validate the finished gamification. These check if the gamification goal was\nachieved. Can be combined with the validation of the project goal.",
     "parent": "2-test"
   },
 
       {
         "name": "Validation with Users",
         "id": "4-validation-methods-validation-with-users",
+        "type": "Subcategory",
         "parent": "3-validation-methods"
       },
       {
         "name": "Validation with Experts",
         "id": "4-validation-methods-validation-with-experts",
+        "type": "Subcategory",
         "parent": "3-validation-methods"
       }
 ]
