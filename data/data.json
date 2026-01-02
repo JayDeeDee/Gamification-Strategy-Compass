@@ -24,16 +24,19 @@
           {
             "name": "Long-term",
             "id": "3-organizational-goal-longterm",
+            "type": "Subcategory",
             "parent": "2-organizational-goal"
           },
           {
             "name": "Medium-term",
             "id": "3-organizational-goal-mediumterm",
+            "type": "Subcategory",
             "parent": "2-organizational-goal"
           },
           {
             "name": "Short-term",
             "id": "3-organizational-goal-shortterm",
+            "type": "Subcategory",
             "parent": "2-organizational-goal"
           },
   
