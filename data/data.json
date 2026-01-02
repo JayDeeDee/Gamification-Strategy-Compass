@@ -645,43 +645,43 @@
       },
       {
         "name": "CN2 Rule Induction Algorithm",
-        "id": "4-tailoring-methods-cn2-rule-induction",
-        "parent": "3-tailoring-methods"
+        "id": "5-tailoring-methods-adaptive-cn2-rule-induction",
+        "parent": "4-tailoring-methods-adaptive-gamification"
       },
       {
         "name": "K-means Clustering",
-        "id": "4-tailoring-methods-kmeans-clustering",
-        "parent": "3-tailoring-methods"
+        "id": "5-tailoring-methods-adaptive-kmeans-clustering",
+        "parent": "4-tailoring-methods-adaptive-gamification"
       },
       {
         "name": "Interpretive Structure Model",
-        "id": "4-tailoring-methods-interpretive-structure-model",
-        "parent": "3-tailoring-methods"
+        "id": "5-tailoring-methods-adaptive-interpretive-structure-model",
+        "parent": "4-tailoring-methods-adaptive-gamification"
       },
       {
         "name": "Two-Step Cluster Analysis",
-        "id": "4-tailoring-methods-two-step-cluster-analysis",
-        "parent": "3-tailoring-methods"
+        "id": "5-tailoring-methods-adaptive-two-step-cluster-analysis",
+        "parent": "4-tailoring-methods-adaptive-gamification"
       },
       {
         "name": "Intelligent Tutorial System",
-        "id": "4-tailoring-methods-intelligent-tutorial-system",
-        "parent": "3-tailoring-methods"
+        "id": "5-tailoring-methods-adaptive-intelligent-tutorial-system",
+        "parent": "4-tailoring-methods-adaptive-gamification"
       },
       {
         "name": "SmartSparrow (Adaptive e-Learning Platform - AeLP)",
-        "id": "4-tailoring-methods-smartsparrow",
-        "parent": "3-tailoring-methods"
+        "id": "5-tailoring-methods-adaptive-smartsparrow",
+        "parent": "4-tailoring-methods-adaptive-gamification"
       },
       {
         "name": "BrainHex Test",
-        "id": "4-tailoring-methods-brainhex-test",
-        "parent": "3-tailoring-methods"
+        "id": "5-tailoring-methods-adaptive-brainhex-test",
+        "parent": "4-tailoring-methods-adaptive-gamification"
       },
       {
         "name": "Adaptive Web-based learning environment",
-        "id": "4-tailoring-methods-adaptive-web-based-learning-environment",
-        "parent": "3-tailoring-methods"
+        "id": "5-tailoring-methods-adaptive-web-based-learning-environment",
+        "parent": "4-tailoring-methods-adaptive-gamification"
       },
   {
     "name": "Test",
