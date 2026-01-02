@@ -533,6 +533,36 @@
     "type": "Category",
     "parent": "1-gamification-strategy"
   },
+      {
+        "name": "Deterding's Definition of Gamification",
+        "id": "3-gamification-theory-deterding",
+        "parent": "2-gamification-theory"
+      },
+      {
+        "name": "Werbach's (Re)defining Gamification",
+        "id": "3-gamification-theory-werbach",
+        "parent": "2-gamification-theory"
+      },
+      {
+        "name": "Lander's Theory of gamified learning",
+        "id": "3-gamification-theory-landers",
+        "parent": "2-gamification-theory"
+      },
+      {
+        "name": "Huotari and Hamari's definition of gamification",
+        "id": "3-gamification-theory-huotari-hamari",
+        "parent": "2-gamification-theory"
+      },
+      {
+        "name": "Staller's non-definition of gamification",
+        "id": "3-gamification-theory-staller",
+        "parent": "2-gamification-theory"
+      },
+      {
+        "name": "Other",
+        "id": "3-gamification-theory-other",
+        "parent": "2-gamification-theory"
+      },
   {
     "name": "Model",
     "id": "3-model",
