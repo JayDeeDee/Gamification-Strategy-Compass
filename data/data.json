@@ -2,7 +2,7 @@
   {
     "name": "Gamification Strategy\nCompass",
     "normal": { "fill": "#2F2F2F" },
-    "description": "The Gamification Strategy Compass (GSC) is a taxonomy to describe, guide, and analyze gamification strategies. It\nis intended to support practitioners in systematically documenting and reflecting on their\ngamification strategies and to help researchers compare and analyze different gamification\nstrategies. To navigate the compass, klick on the different elements of the chart to\nzoom into each level and click on the central element after zooming, to return to the previous level.",
+    "description": "The Gamification Strategy Compass (GSC) is a taxonomy to describe, guide, and analyze gamification strategies. \nIt is intended to support practitioners in systematically documenting and reflecting on their\ngamification strategies and to help researchers compare and analyze different gamification strategies. \nTo navigate the compass, klick on the different elements of the chart to zoom into each \nlevel and click on the central element after zooming, to return to the previous level.",
      "type": "Root",
     "id": "0-title"
   },
