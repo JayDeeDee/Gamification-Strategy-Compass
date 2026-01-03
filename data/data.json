@@ -299,7 +299,12 @@
          "type": "Item",
          "parent": "2-ethics"
         },
-
+        {"name": "Other",
+         "id": "3-other-ethics",
+         "type": "Item",
+         "description": "If you miss another ethical consideration, please suggest its addition.",
+         "parent": "2-ethics"
+        },
 
   {
     "name": "Project Strategy",
@@ -419,6 +424,12 @@
       {
         "name": "Technology Acceptance Model",
         "id": "3-theoretical-foundation-technology-acceptance-model",
+        "type": "Item",
+        "parent": "2-theoretical-foundation"
+      },
+      {
+        "name": "Other",
+        "id": "3-theoretical-foundation-other",
         "type": "Item",
         "parent": "2-theoretical-foundation"
       },
@@ -707,6 +718,13 @@
             "type": "Item",
             "parent": "2-gamification-framework"
           },
+          {
+            "name": "Other",
+            "id": "3-gamification-framework-other",
+            "type": "Item",
+            "description": "If you miss a specific important gamification framework, please suggest its addition.",
+            "parent": "2-gamification-framework"
+          },
 
   {
     "name": "Tailoring",
@@ -766,6 +784,13 @@
                     "type": "Item",
                     "parent": "4-tailoring-focus-player-typology"
                   },
+                  {
+                    "name": "Other",
+                    "id": "5-tailoring-focus-player-typology-other",
+                    "type": "Item",
+                    "description": "If you miss a specific important player typology, please suggest its addition.",
+                    "parent": "4-tailoring-focus-player-typology"
+                  },
 
            {
               "name": "Personality Traits",
@@ -796,6 +821,13 @@
                   "name": "Murray's Secondary Psychological Needs",
                   "id": "5-tailoring-focus-personality-traits-murray-secondary-psy",
                   "type": "Item",
+                  "parent": "4-tailoring-focus-personality-traits"
+                },
+                {
+                  "name": "Other",
+                  "id": "5-tailoring-focus-personality-traits-other",
+                  "type": "Item",
+                  "description": "If you miss a specific important personality trait model, please suggest its addition.",
                   "parent": "4-tailoring-focus-personality-traits"
                 },
 
@@ -840,6 +872,13 @@
               "name": "Performance",
               "id": "4-tailoring-focus-performance",
               "type": "Item",
+              "parent": "3-tailoring-focus"
+            },
+            {
+              "name": "Other",
+              "id": "4-tailoring-focus-other",
+              "type": "Item",
+              "description": "If you miss another tailoring focus, please suggest its addition.",
               "parent": "3-tailoring-focus"
             },
   {
@@ -902,6 +941,13 @@
               "name": "Adaptive Web-based learning environment",
               "id": "5-tailoring-methods-adaptive-web-based-learning-environment",
               "type": "Item",
+              "parent": "4-tailoring-methods-adaptive-gamification"
+            },
+            {
+              "name": "Other",
+              "id": "5-tailoring-methods-adaptive-other",
+              "type": "Item",
+              "description": "If you miss another adaptive gamification method, please suggest its addition.",
               "parent": "4-tailoring-methods-adaptive-gamification"
             },
   {
