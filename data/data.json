@@ -1083,31 +1083,31 @@
         "name": "Surveys/Questionnaires",
         "id": "4-evaluation-methods-surveys-questionnaires",
         "type": "Subcategory",
-        "description": "Surveys and questionnaires are structured tools used to collect data from participants about\ntheir experiences, perceptions, and attitudes towards the gamified system. They offer a\nsystematic way to gather quantitative and qualitative feedback, enabling researchers\nto assess various aspects of user engagement, satisfaction, and the overall effectiveness of\nthe gamification elements implemented. Some Questionnaires can help asssessing a specific KPI.",
+      "description": "Surveys and questionnaires are structured tools used to collect data from participants about\ntheir experiences, perceptions, and attitudes towards the gamified system. They offer a\nsystematic way to gather quantitative and qualitative feedback, enabling researchers\nto assess various aspects of user engagement, satisfaction, and the overall effectiveness of\nthe gamification elements implemented. Some Questionnaires can help asssessing a specific KPI.",
         "parent": "3-evaluation-methods"
       },
           {
-            "name": "Short Flow State Scale-2. Jackson et al. (2002)",
-            "id": "5-evaluation-methods-surveys-questionnaires-short-flow-state-scale-2",
+            "name": "Flow State Scale-2. Jackson et al. (2002)",
+            "id": "5-evaluation-methods-surveys-questionnaires-flow-state-scale-2-jackson-et-al-2002",
             "type": "Item",
-            "parent": "4-evaluation-methods-surveys-questionnaires"
-          },
-          {
-            "name": "Four questions adjusted by Agarwal et al. (1997)",
-            "id": "5-evaluation-methods-surveys-questionnaires-four-questions-adjusted-by-agarwal-et-al-1997",
-            "type": "Item",
+            "description": "Evaluated Dimensions: Flow\n Designed to assess flow experiences in physical activity within a particular event.",
+            "link": "https://doi.org/10.1123/jsep.24.2.133",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
             "name": "Game experience Questionnaire. Ijsselsteijn et al. (2013)",
             "id": "5-evaluation-methods-surveys-questionnaires-game-experience-questionnaire-ijsselsteijn-et-al-2013",
             "type": "Item",
+            "description": "Evaluated Dimensions: Game Experience (Immersion, Flow, Competence, Positive and Negative\nAffect, Tension, and Challenge), psychological and behavioral involvement\n Designed to be administered directly after the gaming session, consisting of 3 Modules.",
+            "link": "https://research.tue.nl/en/publications/the-game-experience-questionnaire/",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
             "name": "Dispositional Flow State Scale-2. Jackson et al. (2002)",
             "id": "5-evaluation-methods-surveys-questionnaires-dispositional-flow-state-scale-2-jackson-et-al-2002",
             "type": "Item",
+            "description": "Evaluated Dimensions: Flow\n Designed to assess flow experiences the frequency of flow experiences in chosen physical activity in general",
+            "link": "https://doi.org/10.1123/jsep.24.2.133",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
