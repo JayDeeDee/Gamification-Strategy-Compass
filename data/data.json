@@ -561,26 +561,8 @@
     "parent": "1-gamification-strategy"
   },
       {
-        "name": "Deterding's Definition of Gamification",
-        "id": "3-gamification-theory-deterding",
-        "type": "Item",
-        "parent": "2-gamification-theory"
-      },
-      {
-        "name": "Werbach's (Re)defining Gamification",
-        "id": "3-gamification-theory-werbach",
-        "type": "Item",
-        "parent": "2-gamification-theory"
-      },
-      {
         "name": "Lander's Theory of gamified learning",
         "id": "3-gamification-theory-landers",
-        "type": "Item",
-        "parent": "2-gamification-theory"
-      },
-      {
-        "name": "Huotari and Hamari's definition of gamification",
-        "id": "3-gamification-theory-huotari-hamari",
         "type": "Item",
         "parent": "2-gamification-theory"
       },
@@ -603,6 +585,27 @@
     "description": "A gamification theory that is some form of theoretical model. Models are abstractions that are\nsupposed to represent complex contexts. It includes specification of the concepts, relationships,\nand rules within the concept.",
     "parent": "2-gamification-theory"
   },
+      {
+        "name": "Deterding's Definition of Gamification",
+        "id": "4-gamification-theory-deterding",
+        "type": "Definition",
+        "description": "The use of game design elements in non-game contexts.",
+        "parent": "3-model"
+      },
+      {
+        "name": "Werbach's (Re)defining Gamification",
+        "id": "4-gamification-theory-werbach",
+        "type": "Definition",
+        "description": "The process of making activities more game-like",
+        "parent": "3-model"
+      },
+      {
+        "name": "Huotari and Hamari's definition of gamification",
+        "id": "4-gamification-theory-huotari-hamari",
+        "type": "Definition",
+        "description": "A process of enhancing a service with affordances for gameful experiences in order to support user's overall value creation.",
+        "parent": "3-model"
+      },
 
   {
     "name": "Gamification Framework",
@@ -616,10 +619,10 @@
             "id": "3-gamification-framework-ditommasso-2011",
             "type": "Item",
             "description":"",
-            "level-of-guidance": "guidelines",
-            "background": "academic",
-            "focus": "user-centered",
-            "level-of-personalization": "adaptive",
+            "level-of-guidance": "",
+            "background": "",
+            "focus": "",
+            "level-of-personalization": "",
             "parent": "2-gamification-framework"
           },
           {
