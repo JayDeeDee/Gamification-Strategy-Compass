@@ -953,6 +953,26 @@
               "description": "If you miss another adaptive gamification method, please suggest its addition.",
               "parent": "4-tailoring-methods-adaptive-gamification"
             },
+
+      {
+        "name": "Modeling",
+        "id": "4-tailoring-methods-modeling",
+        "type": "Item",
+        "parent": "3-tailoring-methods"
+      },
+      {
+        "name": "Personalization",
+        "id": "4-tailoring-methods-personalization",
+        "type": "Item",
+        "parent": "3-tailoring-methods"
+      },
+      {
+        "name": "Recommendation",
+        "id": "4-tailoring-methods-recommendation",
+        "type": "Item",
+        "parent": "3-tailoring-methods"
+      },
+
   {
     "name": "Test",
     "id": "2-test",
@@ -1065,21 +1085,21 @@
         "parent": "3-evaluation-methods"
       },
         {
-          "name": "non-gamified vs. gamified",
+          "name": "Non-gamified vs. Gamified",
           "id": "5-evaluation-methods-ab-testing-non-gamified-vs-gamified",
           "type": "Item",
           "description": "Compare a version of the system without gamification elements to a version with gamification elements to assess the overall impact of gamification on user engagement, motivation, and performance.",
           "parent": "4-evaluation-methods-ab-testing"
         },
         {
-          "name": "swap single game elements",
+          "name": "Swap Single Game Elements",
           "id": "5-evaluation-methods-ab-testing-swap-single-game-elements",
           "type": "Item",
           "description": "Test the effectiveness of individual game elements by swapping them between two versions of the system. This helps identify which specific elements contribute most to the desired outcomes.",
           "parent": "4-evaluation-methods-ab-testing"
         },
         {
-          "name": "personalizes vs. non-personalized",
+          "name": "Personalized vs. Non-Personalized",
           "id": "5-evaluation-methods-ab-testing-personalized-vs-non-personalized",
           "type": "Item",
           "description": "Evaluate the impact of personalization in gamification by comparing a personalized gamified system (tailored to the user) with a non-personalized version. This helps determine the added value of customization in enhancing user engagement and satisfaction.",
