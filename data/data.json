@@ -1089,7 +1089,7 @@
           {
             "name": "Flow State Scale-2. Jackson et al. (2002)",
             "id": "5-evaluation-methods-surveys-questionnaires-flow-state-scale-2-jackson-et-al-2002",
-            "type": "Item",
+            "type": "Questionnaire",
             "description": "Evaluated Dimensions: Flow\n Designed to assess flow experiences in physical activity within a particular event.",
             "link": "https://doi.org/10.1123/jsep.24.2.133",
             "parent": "4-evaluation-methods-surveys-questionnaires"
@@ -1097,7 +1097,7 @@
           {
             "name": "Game experience Questionnaire. Ijsselsteijn et al. (2013)",
             "id": "5-evaluation-methods-surveys-questionnaires-game-experience-questionnaire-ijsselsteijn-et-al-2013",
-            "type": "Item",
+            "type": "Questionnaire",
             "description": "Evaluated Dimensions: Game Experience (Immersion, Flow, Competence, Positive and Negative\nAffect, Tension, and Challenge), psychological and behavioral involvement\n Designed to be administered directly after the gaming session, consisting of 3 Modules.",
             "link": "https://research.tue.nl/en/publications/the-game-experience-questionnaire/",
             "parent": "4-evaluation-methods-surveys-questionnaires"
@@ -1105,33 +1105,65 @@
           {
             "name": "Dispositional Flow State Scale-2. Jackson et al. (2002)",
             "id": "5-evaluation-methods-surveys-questionnaires-dispositional-flow-state-scale-2-jackson-et-al-2002",
-            "type": "Item",
+            "type": "Questionnaire",
             "description": "Evaluated Dimensions: Flow\n Designed to assess flow experiences the frequency of flow experiences in chosen physical activity in general",
             "link": "https://doi.org/10.1123/jsep.24.2.133",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
-            "name": "Q sorts questionnaire adapted from Van Exel et al. (2005)",
-            "id": "5-evaluation-methods-surveys-questionnaires-q-sorts-questionnaire-adapted-from-van-exel-et-al-2005",
-            "type": "Item",
+            "name": "Q sorts questionnaire from Stephenson (1953)",
+            "id": "5-evaluation-methods-surveys-questionnaires-q-sorts-questionnaire-from-stephenson-1953",
+            "type": "Questionnaire",
+            "description": "Evaluated Dimensions: User Preferences\n A qualitative method to prioritize people's preferences regarding certain topics. For example, specific gamification elements.",
+            "link": "https://link.springer.com/chapter/10.1007/978-3-031-08518-5_20",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
-            "name": "Flow Questionnaire. Csikszentmihalyi et al. (2014)",
-            "id": "5-evaluation-methods-surveys-questionnaires-flow-questionnaire-csikszentmihalyi-et-al-2014",
-            "type": "Item",
+            "name": "User Experience Questionnaire (UEQ). Laugwitz et al. (2008)",
+            "id": "5-evaluation-methods-surveys-questionnaires-user-experience-questionnaire-ueq-laugwitz-et-al-2008",
+            "type": "Questionnaire",
+            "description": "Evaluated Dimensions: User Experience (Attractiveness, Perspicuity, Efficiency, Dependability,\nStimulation, Novelty)\n A standardized questionnaire to measure the user experience of interactive products.",
+            "link": "https://www.ueq-online.org/",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
-            "name": "Experience sampling method. Larson et al. (2014)",
-            "id": "5-evaluation-methods-surveys-questionnaires-experience-sampling-method-larson-et-al-2014",
-            "type": "Item",
+            "name": "System Usability Scale (SUS). Brooke (1996)",
+            "id": "5-evaluation-methods-surveys-questionnaires-system-usability-scale-sus-brooke-1996",
+            "type": "Questionnaire",
+            "description": "Evaluated Dimensions: Usability\n A tool for measuring the usability. It consists of a 10-item questionnaire with five\nresponse options for respondents; from Strongly agree to Strongly disagree.",
+            "link": "https://www.researchgate.net/publication/228593520_SUS_A_quick_and_dirty_usability_scale",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
-            "name": "Multidimensional measurement. Mahfouz et al. (2011)",
-            "id": "5-evaluation-methods-surveys-questionnaires-multidimensional-measurement-mahfouz-et-al-2011",
-            "type": "Item",
+            "name": "UEQ+. Schrepp et al. (2017)",
+            "id": "5-evaluation-methods-surveys-questionnaires-ueq-plus-schrepp-et-al-2017",
+            "type": "Questionnaire",
+            "description": "Evaluated Dimensions: User Experience with 27 flexible scales\n A modular questionnaire to measure the user experience of interactive products. It\noffers a flexible approach to measure the UX aspects that are relevant for\neach product individually.",
+            "link": "https://ueqplus.ueq-research.org/",
+            "parent": "4-evaluation-methods-surveys-questionnaires"
+          },
+          {
+            "name": "Gameful Experience Questionnaire (GAMEFULQUEST). Högberg et al. (2019)",
+            "id": "5-evaluation-methods-surveys-questionnaires-gameful-experience-questionnaire-gamefulquest-hogberg-et-al-2019",
+            "type": "Questionnaire",
+            "description": "Evaluated Dimensions: Gameful Experience (Accomplishment, Challenge, Competition,\nGuidance, Immersion, Playfulness, Social Experience)\n A questionnaire to assess the perceived gamefulness of a system.",
+            "link": "https://doi.org/10.1007/s11257-019-09223-w",
+            "parent": "4-evaluation-methods-surveys-questionnaires"
+          },
+          {
+            "name": "Single Ease Question (SEQ). Sauro (2011)",
+            "id": "5-evaluation-methods-surveys-questionnaires-single-ease-question-seq-sauro-2011",
+            "type": "Questionnaire",
+            "description": "Evaluated Dimensions: Ease of use\n A one-question survey to measure the perceived ease of completing a task with a system.",
+            "link": "https://measuringu.com/seq/",
+            "parent": "4-evaluation-methods-surveys-questionnaires"
+          },
+          {
+            "name": "Usability Metric for User Experience (UMUX). Finstad (2010)",
+            "id": "5-evaluation-methods-surveys-questionnaires-usability-metric-for-user-experience-umux-finstad-2010",
+            "type": "Questionnaire",
+            "description": "Evaluated Dimensions: Usability\n A four item questionnaire to measure perceived usability.",
+            "link": "https://doi.org/10.1016/j.intcom.2010.04.004",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
@@ -1144,6 +1176,12 @@
       {
         "name": "Usability Tests",
         "id": "4-evaluation-methods-usability-tests",
+        "type": "Item",
+        "parent": "3-evaluation-methods"
+      },
+      {
+        "name": "Experience sampling method",
+        "id": "4-evaluation-methods-experience-sampling-method",
         "type": "Item",
         "parent": "3-evaluation-methods"
       },
