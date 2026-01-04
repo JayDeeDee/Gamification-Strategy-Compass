@@ -69,7 +69,7 @@
     document.getElementById('overlay-close').addEventListener('click', function (e) {
       e.preventDefault()
       document.getElementById('overlay').classList.add('hide');
-      document.getElementById('overlay-content').innerHTML("");
+      document.getElementById('overlay-content').innerHTML = "";
     })
 
     anychart.onDocumentReady(function () {
@@ -124,7 +124,7 @@
                 markup += evaluation ? '<li>Evaluation: '+evaluation +'</li>' : '';
                 markup += '</ul>';
               }
-              document.getElementById('overlay-content').innerHTML(markup);
+              document.getElementById('overlay-content').innerHTML =markup;
               document.getElementById('overlay').classList.remove('hide');
 
             }
