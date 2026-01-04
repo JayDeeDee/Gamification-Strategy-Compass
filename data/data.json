@@ -621,8 +621,8 @@
             "link": "https://www.amazon.de/Win-Game-Thinking-Revolutionize-Business/dp/1613630239",
             "description":"The six steps to gamification (6D) Framework is a gamification design framework used to structure and evaluate gamified systems from intent to operation. It consists of six steps: 1. Define business objectives 2. Delineate target behaviors 3. Describe your players 4. Devise activity loops 5. Don’t forget the fun 6. Deploy the appropriate tools",
             "level-of-guidance": "Complete Process",
-            "background": "Academic",
-            "focus": "Strategic coherence and behavioral clarity",
+            "background": "Academic based, non-peer-reviewed",
+            "focus": "Strategic Coherence, Behavioral Clarity",
             "level-of-personalization": "Segment-based, static",
             "parent": "2-gamification-framework"
           },
@@ -630,6 +630,12 @@
             "name": "Gamification Framework. Marczewsky (2012)",
             "id": "3-gamification-framework-marczewsky-2012",
             "type": "Item",
+            "link": "https://www.lulu.com/de/shop/andrzej-marczewski/gamification-a-simple-introduction/ebook/product-179q9gzk.html?srsltid=AfmBOooX2DKiGAIZNaC0WT7gcPqMog1GOoKPfrIwCog7SX8vSYl7n0YI&page=1&pageSize=4",
+            "description":"",
+            "level-of-guidance": "Mechanics Selection Guide",
+            "background": "Practitioner Framework",
+            "focus": "User Motivation, Meaningful Engagement",
+            "level-of-personalization": "Hexad-based, static",
             "parent": "2-gamification-framework"
           },
           {
