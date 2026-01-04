@@ -2,6 +2,8 @@
   {
     "name": "Gamification Strategy\nCompass",
     "normal": { "fill": "#2F2F2F" },
+    "description": "The Gamification Strategy Compass (GSC) is a taxonomy to describe, guide, and analyze gamification strategies. \nIt is intended to support practitioners in systematically documenting and reflecting on their\ngamification strategies and to help researchers compare and analyze different gamification strategies. \nTo navigate the compass, klick on the different elements of the chart to zoom into each \nlevel and click on the central element after zooming, to return to the previous level.",
+     "type": "Root",
     "id": "0-title"
   },
 
@@ -297,7 +299,12 @@
          "type": "Item",
          "parent": "2-ethics"
         },
-
+        {"name": "Other",
+         "id": "3-other-ethics",
+         "type": "Item",
+         "description": "If you miss another ethical consideration, please suggest its addition.",
+         "parent": "2-ethics"
+        },
 
   {
     "name": "Project Strategy",
@@ -417,6 +424,12 @@
       {
         "name": "Technology Acceptance Model",
         "id": "3-theoretical-foundation-technology-acceptance-model",
+        "type": "Item",
+        "parent": "2-theoretical-foundation"
+      },
+      {
+        "name": "Other",
+        "id": "3-theoretical-foundation-other",
         "type": "Item",
         "parent": "2-theoretical-foundation"
       },
@@ -602,6 +615,11 @@
             "name": "A Framework for Success. Di Tommasso (2011)",
             "id": "3-gamification-framework-ditommasso-2011",
             "type": "Item",
+            "description":"",
+            "level-of-guidance": "guidelines",
+            "background": "academic",
+            "focus": "user-centered",
+            "level-of-personalization": "adaptive",
             "parent": "2-gamification-framework"
           },
           {
@@ -700,6 +718,13 @@
             "type": "Item",
             "parent": "2-gamification-framework"
           },
+          {
+            "name": "Other",
+            "id": "3-gamification-framework-other",
+            "type": "Item",
+            "description": "If you miss a specific important gamification framework, please suggest its addition.",
+            "parent": "2-gamification-framework"
+          },
 
   {
     "name": "Tailoring",
@@ -759,6 +784,13 @@
                     "type": "Item",
                     "parent": "4-tailoring-focus-player-typology"
                   },
+                  {
+                    "name": "Other",
+                    "id": "5-tailoring-focus-player-typology-other",
+                    "type": "Item",
+                    "description": "If you miss a specific important player typology, please suggest its addition.",
+                    "parent": "4-tailoring-focus-player-typology"
+                  },
 
            {
               "name": "Personality Traits",
@@ -789,6 +821,13 @@
                   "name": "Murray's Secondary Psychological Needs",
                   "id": "5-tailoring-focus-personality-traits-murray-secondary-psy",
                   "type": "Item",
+                  "parent": "4-tailoring-focus-personality-traits"
+                },
+                {
+                  "name": "Other",
+                  "id": "5-tailoring-focus-personality-traits-other",
+                  "type": "Item",
+                  "description": "If you miss a specific important personality trait model, please suggest its addition.",
                   "parent": "4-tailoring-focus-personality-traits"
                 },
 
@@ -833,6 +872,13 @@
               "name": "Performance",
               "id": "4-tailoring-focus-performance",
               "type": "Item",
+              "parent": "3-tailoring-focus"
+            },
+            {
+              "name": "Other",
+              "id": "4-tailoring-focus-other",
+              "type": "Item",
+              "description": "If you miss another tailoring focus, please suggest its addition.",
               "parent": "3-tailoring-focus"
             },
   {
@@ -895,6 +941,13 @@
               "name": "Adaptive Web-based learning environment",
               "id": "5-tailoring-methods-adaptive-web-based-learning-environment",
               "type": "Item",
+              "parent": "4-tailoring-methods-adaptive-gamification"
+            },
+            {
+              "name": "Other",
+              "id": "5-tailoring-methods-adaptive-other",
+              "type": "Item",
+              "description": "If you miss another adaptive gamification method, please suggest its addition.",
               "parent": "4-tailoring-methods-adaptive-gamification"
             },
   {
@@ -1030,31 +1083,31 @@
         "name": "Surveys/Questionnaires",
         "id": "4-evaluation-methods-surveys-questionnaires",
         "type": "Subcategory",
-        "description": "Surveys and questionnaires are structured tools used to collect data from participants about\ntheir experiences, perceptions, and attitudes towards the gamified system. They offer a\nsystematic way to gather quantitative and qualitative feedback, enabling researchers\nto assess various aspects of user engagement, satisfaction, and the overall effectiveness of\nthe gamification elements implemented. Some Questionnaires can help asssessing a specific KPI.",
+      "description": "Surveys and questionnaires are structured tools used to collect data from participants about\ntheir experiences, perceptions, and attitudes towards the gamified system. They offer a\nsystematic way to gather quantitative and qualitative feedback, enabling researchers\nto assess various aspects of user engagement, satisfaction, and the overall effectiveness of\nthe gamification elements implemented. Some Questionnaires can help asssessing a specific KPI.",
         "parent": "3-evaluation-methods"
       },
           {
-            "name": "Short Flow State Scale-2. Jackson et al. (2002)",
-            "id": "5-evaluation-methods-surveys-questionnaires-short-flow-state-scale-2",
+            "name": "Flow State Scale-2. Jackson et al. (2002)",
+            "id": "5-evaluation-methods-surveys-questionnaires-flow-state-scale-2-jackson-et-al-2002",
             "type": "Item",
-            "parent": "4-evaluation-methods-surveys-questionnaires"
-          },
-          {
-            "name": "Four questions adjusted by Agarwal et al. (1997)",
-            "id": "5-evaluation-methods-surveys-questionnaires-four-questions-adjusted-by-agarwal-et-al-1997",
-            "type": "Item",
+            "description": "Evaluated Dimensions: Flow\n Designed to assess flow experiences in physical activity within a particular event.",
+            "link": "https://doi.org/10.1123/jsep.24.2.133",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
             "name": "Game experience Questionnaire. Ijsselsteijn et al. (2013)",
             "id": "5-evaluation-methods-surveys-questionnaires-game-experience-questionnaire-ijsselsteijn-et-al-2013",
             "type": "Item",
+            "description": "Evaluated Dimensions: Game Experience (Immersion, Flow, Competence, Positive and Negative\nAffect, Tension, and Challenge), psychological and behavioral involvement\n Designed to be administered directly after the gaming session, consisting of 3 Modules.",
+            "link": "https://research.tue.nl/en/publications/the-game-experience-questionnaire/",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
             "name": "Dispositional Flow State Scale-2. Jackson et al. (2002)",
             "id": "5-evaluation-methods-surveys-questionnaires-dispositional-flow-state-scale-2-jackson-et-al-2002",
             "type": "Item",
+            "description": "Evaluated Dimensions: Flow\n Designed to assess flow experiences the frequency of flow experiences in chosen physical activity in general",
+            "link": "https://doi.org/10.1123/jsep.24.2.133",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
           {
