@@ -38,11 +38,16 @@
 
           // create sunburst chart
           let chart = anychart.sunburst(dataTree);
-
           chart.title("last modified: 2026-01-04");
 
           // set calculation mode
           chart.calculationMode('ordinal-from-leaves');
+
+          let item_properties = {
+            'Individual/Solo': {
+              title: 'overlay title',
+              description: 'Beschreibung <a target="_blank" href="https://example.com">Link</a>'}
+          };
 
           // set chart labels settings
           chart.labels().hAlign('center');
@@ -58,20 +63,23 @@
           });
 
           // create an event listener for the pointMouseOut event
-          chart.listen("pointMouseOver", function(e){
+          //chart.listen("pointMouseOver", function(e){
             // change the cursor style
-            console.log(e.target.name());
-            document.body.style.cursor = "pointer";
-          });
+          //  console.log(e.target.name());
+          //  document.body.style.cursor = "pointer";
+          //});
 
           // create an event listener for the pointMouseOut event
-          chart.listen("pointMouseOut", function(e){
+          //chart.listen("pointMouseOut", function(e){
             // set the default cursor style
-            document.body.style.cursor = "auto";
-          });
-
-          chart.listen("click", function(e) {
-            console.log(e.target.name());
+          //  document.body.style.cursor = "auto";
+          //});
+          // Get chart leaves.
+          var items = chart.leaves();
+          items.listen("click", function(e) {
+            e.preventDefault();
+            console.log(e.actualTarget);
+            console.log(e.currentTarget);
           });
 
           // format chart tooltip
