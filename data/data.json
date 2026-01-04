@@ -1068,18 +1068,21 @@
           "name": "non-gamified vs. gamified",
           "id": "5-evaluation-methods-ab-testing-non-gamified-vs-gamified",
           "type": "Item",
+          "description": "Compare a version of the system without gamification elements to a version with gamification elements to assess the overall impact of gamification on user engagement, motivation, and performance.",
           "parent": "4-evaluation-methods-ab-testing"
         },
         {
           "name": "swap single game elements",
           "id": "5-evaluation-methods-ab-testing-swap-single-game-elements",
           "type": "Item",
+          "description": "Test the effectiveness of individual game elements by swapping them between two versions of the system. This helps identify which specific elements contribute most to the desired outcomes.",
           "parent": "4-evaluation-methods-ab-testing"
         },
         {
           "name": "personalizes vs. non-personalized",
           "id": "5-evaluation-methods-ab-testing-personalized-vs-non-personalized",
           "type": "Item",
+          "description": "Evaluate the impact of personalization in gamification by comparing a personalized gamified system (tailored to the user) with a non-personalized version. This helps determine the added value of customization in enhancing user engagement and satisfaction.",
           "parent": "4-evaluation-methods-ab-testing"
         },
       {
@@ -1093,7 +1096,8 @@
             "name": "Flow State Scale-2. Jackson et al. (2002)",
             "id": "5-evaluation-methods-surveys-questionnaires-flow-state-scale-2-jackson-et-al-2002",
             "type": "Questionnaire",
-            "description": "Evaluated Dimensions: Flow\n Designed to assess flow experiences in physical activity within a particular event.",
+            "evaluation": "Flow",
+            "description": "Designed to assess flow experiences in physical activity within a particular event.",
             "link": "https://doi.org/10.1123/jsep.24.2.133",
             "parent": "4-evaluation-methods-surveys-questionnaires"
           },
