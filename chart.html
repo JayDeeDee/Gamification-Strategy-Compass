@@ -123,7 +123,7 @@
                 markup += personalization ? '<li>Personalization: '+personalization+'</li>' : '';
                 markup += evaluation ? '<li>Evaluation: '+evaluation +'</li>' : '';
                 markup += '</ul>';
-              } 
+              }
               document.getElementById('overlay-content').innerHTML(markup);
               document.getElementById('overlay').classList.remove('hide');
 
@@ -138,7 +138,7 @@
           tooltip.useHtml(true);
           // customize the format of the sunburst chart tooltip
           tooltip.format('<h5 style="font-size:14px; font-weight: 800; margin: 0.25rem 0; width: 400px; max-width: 50vw; border-bottom: 1px solid rgba(255,255,255,.5)">{%name}</h5><p style="font-size:12px; font-weight:200; width: 400px; max-width: 50vw; margin: 0.8rem 0 0.2rem;"><b>{%description}</b></p>');
-          chart.leaves().tooltip().format('<h5 style="font-size:14px; font-weight: 800; margin: 0.25rem 0;">{%name}</h5>');
+          //chart.leaves().tooltip().format('<h5 style="font-size:14px; font-weight: 800; margin: 0.25rem 0;">{%name}</h5>');
 
 
           //console.log(chart);
