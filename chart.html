@@ -21,8 +21,7 @@
     }
 
     body {
-      width: 140%;
-      height: 140%;
+      height: 200%;
     }
   </style>
 </head>
@@ -41,7 +40,7 @@
           // create sunburst chart
           let chart = anychart.sunburst(dataTree);
 
-          chart.title("last modified: 2026-01-03");
+          chart.title("last modified: 2026-01-04");
 
           // set calculation mode
           chart.calculationMode('ordinal-from-leaves');
@@ -59,11 +58,23 @@
               : this.mainColor;
           });
 
+          // create an event listener for the pointMouseOut event
+          chart.listen("pointMouseOver", function(e){
+            // change the cursor style
+            document.body.style.cursor = "pointer";
+          });
+
+          // create an event listener for the pointMouseOut event
+          chart.listen("pointMouseOut", function(e){
+            // set the default cursor style
+            document.body.style.cursor = "auto";
+          });
+
           // format chart tooltip
           let tooltip = chart.tooltip();
           //tooltip.title().text("Titel");
 
-          tooltip.format("{%name}\ntype:{%type}\n{%description}");
+          tooltip.format("{%name}\n{%description}");
 
           //console.log(chart);
           // set container id for the chart
