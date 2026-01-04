@@ -615,20 +615,15 @@
     "parent": "1-gamification-strategy"
   },
           {
-            "name": "A Framework for Success. Di Tommasso (2011)",
-            "id": "3-gamification-framework-ditommasso-2011",
-            "type": "Item",
-            "description":"description value",
-            "level-of-guidance": "value for level of guidance",
-            "background": "background value",
-            "focus": "focus value",
-            "level-of-personalization": "value for level of personalization",
-            "parent": "2-gamification-framework"
-          },
-          {
             "name": "Six steps to Gamification. Werbach and Hunter (2012)",
             "id": "3-gamification-framework-werbach-hunter-2012",
             "type": "Item",
+            "link": "https://www.amazon.de/Win-Game-Thinking-Revolutionize-Business/dp/1613630239",
+            "description":"The six steps to gamification (6D) Framework is a gamification design framework used to structure and evaluate gamified systems from intent to operation. It consists of six steps: 1. Define business objectives 2. Delineate target behaviors 3. Describe your players 4. Devise activity loops 5. Don’t forget the fun 6. Deploy the appropriate tools",
+            "level-of-guidance": "Complete Process",
+            "background": "Academic",
+            "focus": "Strategic coherence and behavioral clarity",
+            "level-of-personalization": "Segment-based, static",
             "parent": "2-gamification-framework"
           },
           {
