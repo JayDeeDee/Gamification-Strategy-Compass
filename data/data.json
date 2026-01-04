@@ -20,7 +20,7 @@
     "name": "Organizational Goal",
     "id": "2-organizational-goal",
     "type": "Category",
-    "description": "The <a href='https://www.google.de'>organizational</a> goal can also be called a business incentive. Each organization has one or\nmore goals they want to achieve. These can be long-term, mid-term, or short-term and can be\nmore broad (e.g., financial profit) or specific (e.g., increase the number of users by 10%).",
+    "description": "The organizational goal can also be called a business incentive. Each organization has one or\nmore goals they want to achieve. These can be long-term, mid-term, or short-term and can be\nmore broad (e.g., financial profit) or specific (e.g., increase the number of users by 10%).",
     "parent": "1-context-organization"
   },
           {
