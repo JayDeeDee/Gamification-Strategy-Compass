@@ -113,23 +113,19 @@
               console.log('Leaf clicked:', name, desc);
 
               let markup = '';
-                markup += name ? "<h2>'+name+'</h2>": "";
-                markup += desc ? '<p>'+desc+'</p>' : '';
-                if(guidance || focus || background || personalization || evaluation) {
-                  markup += '<ul>';
-                  markup += guidance ? '<li>Level of Guidance: '+guidance+'</li>' : '';
-                  markup += focus ? '<li>Focus: '+focus+'</li>' : '';
-                  markup += background ? '<li>Background: '+background+'</li>' : '';
-                  markup += personalization ? '<li>Personalization: '+personalization+'</li>' : '';
-                  markup += evaluation ? '<li>Evaluation: '+evaluation +'</li>' : '';
-                  markup += '</ul>';
-                }
-
+              markup += name ? "<h2>'+name+'</h2>": "";
+              markup += desc ? '<p>'+desc+'</p>' : '';
+              if(guidance || focus || background || personalization || evaluation) {
+                markup += '<ul>';
+                markup += guidance ? '<li>Level of Guidance: '+guidance+'</li>' : '';
+                markup += focus ? '<li>Focus: '+focus+'</li>' : '';
+                markup += background ? '<li>Background: '+background+'</li>' : '';
+                markup += personalization ? '<li>Personalization: '+personalization+'</li>' : '';
+                markup += evaluation ? '<li>Evaluation: '+evaluation +'</li>' : '';
+                markup += '</ul>';
+              } 
               document.getElementById('overlay-content').innerHTML(markup);
-              } else {
-                alert('Noch keine Informationen hinterlegt');
-              }
-
+              document.getElementById('overlay').classList.remove('hide');
 
             }
           });
