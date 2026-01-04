@@ -19,6 +19,41 @@
       margin: 0;
       padding: 0;
     }
+    #overlay {
+      position: absolute;
+      z-index: 90000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #overlay-content {
+      position: relative;
+      z-index: 1;
+      top: 25vh;
+      width: 50%;
+      max-height: 75vh;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #overlay-close {
+      position: absolute;
+      display: block;
+      z-index: 1;
+      right: 25vh;
+      width: 1.5rem;
+      height: 1.5rem;
+      text-align: center;
+      padding-right: 0.25rem;
+      padding-top: 0.25rem;
+    }
+
+    #overlay.hide {
+      display: none;
+    }
 
     body {
       height: 200%;
@@ -26,9 +61,17 @@
   </style>
 </head>
 <body>
-  <div id="container"></div>
+  <div id="container"></div>D
+  <div id="overlay" class="hide"><a href="#container" title="close" id="overlay-close"></a><div id="overlay-content"></div></div>D
 
   <script>
+
+    document.getElementById('overlay-close').addEventListener('click', function (e) {
+      e.preventDefault()
+      document.getElementById('overlay').classList.add('hide');
+      document.getElementById('overlay-content').innerHTML("");
+    })
+
     anychart.onDocumentReady(function () {
       anychart.data.loadJsonFile(
         'data/data.json',
@@ -42,12 +85,6 @@
 
           // set calculation mode
           chart.calculationMode('ordinal-from-leaves');
-
-          let item_properties = {
-            'Individual/Solo': {
-              title: 'overlay title',
-              description: 'Beschreibung <a target="_blank" href="https://example.com">Link</a>'}
-          };
 
           // set chart labels settings
           chart.labels().hAlign('center');
@@ -63,18 +100,32 @@
           });
 
           chart.listen('pointClick', function(e) {
-            let node = e.point.getNode();
+            let node = (e.point) ? e.point.getNode() : null;
             if (node && node.numChildren() === 0) {
               // Leaf
               let name = node.get('name');
               let desc = node.get('description');
+              let guidance = node.get('level-of-guidance');
+              let focus = node.get('focus');
+              let background = node.get('background');
+              let personalization = node.get('level-of-personalization');
+              let evaluation = node.get('evaluation');
               console.log('Leaf clicked:', name, desc);
 
               let markup = '';
-              if (item_properties && item_properties[name]) {
-                markup = item_properties[name].title ? "<h5>'+item_properties[name].title+'</h5>": "";
-                markup = item_properties[name].description ? '<p>'+item_properties[name].description+'</p>' : '';
-                console.log(markup);
+                markup += name ? "<h2>'+name+'</h2>": "";
+                markup += desc ? '<p>'+desc+'</p>' : '';
+                if(guidance || focus || background || personalization || evaluation) {
+                  markup += '<ul>';
+                  markup += guidance ? '<li>Level of Guidance: '+guidance+'</li>' : '';
+                  markup += focus ? '<li>Focus: '+focus+'</li>' : '';
+                  markup += background ? '<li>Background: '+background+'</li>' : '';
+                  markup += personalization ? '<li>Personalization: '+personalization+'</li>' : '';
+                  markup += evaluation ? '<li>Evaluation: '+evaluation +'</li>' : '';
+                  markup += '</ul>';
+                }
+
+              document.getElementById('overlay-content').innerHTML(markup);
               } else {
                 alert('Noch keine Informationen hinterlegt');
               }
@@ -91,6 +142,7 @@
           tooltip.useHtml(true);
           // customize the format of the sunburst chart tooltip
           tooltip.format('<h5 style="font-size:14px; font-weight: 800; margin: 0.25rem 0; width: 400px; max-width: 50vw; border-bottom: 1px solid rgba(255,255,255,.5)">{%name}</h5><p style="font-size:12px; font-weight:200; width: 400px; max-width: 50vw; margin: 0.8rem 0 0.2rem;"><b>{%description}</b></p>');
+          chart.leaves().tooltip().format('<h5 style="font-size:14px; font-weight: 800; margin: 0.25rem 0;">{%name}</h5>');
 
 
           //console.log(chart);
