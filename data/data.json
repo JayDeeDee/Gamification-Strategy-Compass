@@ -618,11 +618,11 @@
             "name": "A Framework for Success. Di Tommasso (2011)",
             "id": "3-gamification-framework-ditommasso-2011",
             "type": "Item",
-            "description":"",
-            "level-of-guidance": "",
-            "background": "",
-            "focus": "",
-            "level-of-personalization": "",
+            "description":"description value",
+            "level-of-guidance": "value for level of guidance",
+            "background": "background value",
+            "focus": "focus value",
+            "level-of-personalization": "value for level of personalization",
             "parent": "2-gamification-framework"
           },
           {
