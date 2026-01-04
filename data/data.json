@@ -20,7 +20,7 @@
     "name": "Organizational Goal",
     "id": "2-organizational-goal",
     "type": "Category",
-    "description": "The organizational goal can also be called a business incentive. Each organization has one or\nmore goals they want to achieve. These can be long-term, mid-term, or short-term and can be\nmore broad (e.g., financial profit) or specific (e.g., increase the number of users by 10%).",
+    "description": "The <a href='https://www.google.de'>organizational</a> goal can also be called a business incentive. Each organization has one or\nmore goals they want to achieve. These can be long-term, mid-term, or short-term and can be\nmore broad (e.g., financial profit) or specific (e.g., increase the number of users by 10%).",
     "parent": "1-context-organization"
   },
           {
@@ -41,7 +41,7 @@
             "type": "Subcategory",
             "parent": "2-organizational-goal"
           },
-  
+
 
   {
     "name": "Resources",
@@ -249,7 +249,7 @@
         {"name": "Other",
          "id": "3-other-application-domain",
          "type": "Item",
-         "description": "If you miss another application domain, please suggest its addition.", 
+         "description": "If you miss another application domain, please suggest its addition.",
          "parent": "2-application-domain"
         },
   {
@@ -321,7 +321,7 @@
     "description": "Every project has some kind of goal (e.g., teaching a skill or organizing something). This project\ngoal needs to be considered when choosing the gamification strategy, which should support the\nproject goal. As each project goal is individual we give only project goal categories.\nA project may have goals from several categories",
     "parent": "1-project-strategy"
   },
-          
+
           {"name": "Capability Creation",
           "id": "3-project-goal-capability-creation",
           "type": "Subcategory",
@@ -376,7 +376,7 @@
            "description": "If your project goal does not fit into any of these categories, please suggest an addition.",
            "parent": "2-project-goal"
           },
-            
+
 
   {
     "name": "Theoretical Foundation",
@@ -552,7 +552,7 @@
           "description": "If you miss another gamification goal, please suggest its addition.",
          "parent": "2-gamification-goal"
         },
-        
+
   {
     "name": "Gamification Theory",
     "id": "2-gamification-theory",
@@ -611,7 +611,7 @@
     "description": "A structure intended to guide or support the design and integration of gamification. It predominantly\nis used to choose specific game elements. It may also be called a “gamification design\nframework.” It should build upon a gamification theory and can include tailoring and evaluation\nmethods. A gamification framework has several attributes (e.g., level of guidance). It can\nrecommend specific tools and techniques and is part of the gamification strategy.",
     "parent": "1-gamification-strategy"
   },
-          {       
+          {
             "name": "A Framework for Success. Di Tommasso (2011)",
             "id": "3-gamification-framework-ditommasso-2011",
             "type": "Item",
@@ -849,7 +849,7 @@
               "type": "Item",
               "parent": "3-tailoring-focus"
             },
-            
+
             {
               "name": "Motivation",
               "id": "4-tailoring-focus-motivation",
