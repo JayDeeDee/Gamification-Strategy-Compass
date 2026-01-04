@@ -62,30 +62,27 @@
               : this.mainColor;
           });
 
-          // create an event listener for the pointMouseOut event
-          //chart.listen("pointMouseOver", function(e){
-            // change the cursor style
-          //  console.log(e.target.name());
-          //  document.body.style.cursor = "pointer";
-          //});
-
-          // create an event listener for the pointMouseOut event
-          //chart.listen("pointMouseOut", function(e){
-            // set the default cursor style
-          //  document.body.style.cursor = "auto";
-          //});
-          // Get chart leaves.
-          //var items = chart.leaves();
           chart.listen('pointClick', function(e) {
-            var node = e.point.getNode();
+            let node = e.point.getNode();
             if (node && node.numChildren() === 0) {
               // Leaf
-              var name = node.get('name');
-              var id = node.get('id');
-              console.log('Leaf clicked:', id, name);
+              let name = node.get('name');
+              let desc = node.get('description');
+              console.log('Leaf clicked:', name, desc);
+
+              let markup = '';
+              if (item_properties && item_properties[name]) {
+                markup = item_properties[name].title ? "<h5>'+item_properties[name].title+'</h5>": "";
+                markup = item_properties[name].description ? '<p>'+item_properties[name].description+'</p>' : '';
+                console.log(markup);
+              } else {
+                alert('Noch keine Informationen hinterlegt');
+              }
+
+
             }
           });
-          
+
           // format chart tooltip
           let tooltip = chart.tooltip();
           //tooltip.title().text("Titel");
