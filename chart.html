@@ -104,7 +104,7 @@
 
           // create sunburst chart
           let chart = anychart.sunburst(dataTree);
-          chart.title("last modified: 2026-01-04");
+          chart.title().enabled(true).useHtml(true).text('<h1 style="font-size:225%; font-weight: bold;">Gamification Strategy Compass<br><span style="font-size: 100%; font-weight: normal">(last modified: 2026-01-04)</span></h1>');
 
           // set calculation mode
           chart.calculationMode('ordinal-from-leaves');
