@@ -616,10 +616,10 @@
             "id": "3-gamification-framework-ditommasso-2011",
             "type": "Item",
             "description":"",
-            "level-of-guidance": "guidelines",
-            "background": "academic",
-            "focus": "user-centered",
-            "level-of-personalization": "adaptive",
+            "level-of-guidance": "",
+            "background": "",
+            "focus": "",
+            "level-of-personalization": "",
             "parent": "2-gamification-framework"
           },
           {
