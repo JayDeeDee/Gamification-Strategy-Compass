@@ -75,13 +75,17 @@
           //  document.body.style.cursor = "auto";
           //});
           // Get chart leaves.
-          var items = chart.leaves();
-          items.listen("click", function(e) {
-            e.preventDefault();
-            console.log(e.actualTarget);
-            console.log(e.currentTarget);
+          //var items = chart.leaves();
+          chart.listen('pointClick', function(e) {
+            var node = e.point.getNode();
+            if (node && node.numChildren() === 0) {
+              // Leaf
+              var name = node.get('name');
+              var id = node.get('id');
+              console.log('Leaf clicked:', id, name);
+            }
           });
-
+          
           // format chart tooltip
           let tooltip = chart.tooltip();
           //tooltip.title().text("Titel");
