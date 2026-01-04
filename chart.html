@@ -59,7 +59,18 @@
               : this.mainColor;
           });
 
-          //chart.hoverCursor('help');
+          // create an event listener for the pointMouseOut event
+          chart.listen("pointMouseOver", function(e){
+            // change the cursor style
+            document.body.style.cursor = "pointer";
+          });
+
+          // create an event listener for the pointMouseOut event
+          chart.listen("pointMouseOut", function(e){
+            // set the default cursor style
+            document.body.style.cursor = "auto";
+          });
+          
           // format chart tooltip
           let tooltip = chart.tooltip();
           //tooltip.title().text("Titel");
