@@ -77,6 +77,14 @@
     #overlay-content p{
       text-align: left;
     }
+    #overlay-content a{
+      color: #4D7796;
+    }
+
+    #overlay-content a:hover,
+    #overlay-content a:focus {
+      color: #2F485B;
+    }
 
     body {
       height: 200%;
@@ -133,10 +141,15 @@
               let background = node.get('background');
               let personalization = node.get('level-of-personalization');
               let evaluation = node.get('evaluation');
+              let link = node.get('link');
               console.log('Leaf clicked:', name, desc);
 
               let markup = '';
               markup += name ? '<h2>'+name+'</h2>': "";
+              if(link) {
+                markup += '<p><a target="_blank" href="'+link+'">Learn more</a></p>';
+              }
+
               markup += desc ? '<p>'+desc+'</p>' : '';
               if(guidance || focus || background || personalization || evaluation) {
                 markup += '<ul>';
