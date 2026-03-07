@@ -96,192 +96,187 @@
   <div id="overlay" class="hide"><a href="#container" title="close" id="overlay-close">x</a><div id="overlay-content"></div></div>D
 
   <script>
-    // Close the overlay when the close button is clicked.
+
     document.getElementById('overlay-close').addEventListener('click', function (e) {
       e.preventDefault();
       document.getElementById('overlay').classList.add('hide');
-      document.getElementById('overlay-content').innerHTML = "";
+      document.getElementById('overlay-content').innerHTML = '';
     });
 
     anychart.onDocumentReady(function () {
-      anychart.data.loadJsonFile('data/data.json', function (data) {
-        // Show only root (depth 0) and first level (depth 1) initially.
-        const INITIAL_VISIBLE_DEPTH = 1;
+      anychart.data.loadJsonFile(
+              'data/data.json',
+              function (data) {
+                var ROOT_ID = '0-title';
+                var fullTableData = data;
+                var chart = null;
 
-        // After the first expansion click, switch permanently to the full dataset
-        // and keep the original repository behavior from then on.
-        let initialCollapsedMode = true;
+                // Pre-calculate which level-1 nodes have children in the full dataset.
+                // This allows the compact root view to keep only the first ring visible
+                // while still knowing whether a click should open details or drill down.
+                function buildChildLookup(tableData) {
+                  var childCountByParent = {};
 
-        // Lookup maps for fast access.
-        const rowsById = {};
-        const childIdsById = {};
-
-        let chart = null;
-
-        // Build row lookup and initialize child map.
-        data.forEach(function (row) {
-          rowsById[row.id] = row;
-          childIdsById[row.id] = childIdsById[row.id] || [];
-        });
-
-        // Build parent -> children mapping.
-        data.forEach(function (row) {
-          if (row.parent) {
-            childIdsById[row.parent] = childIdsById[row.parent] || [];
-            childIdsById[row.parent].push(row.id);
-          }
-        });
-
-        // Recursively annotate every node with its depth.
-        function annotateDepth(id, depth) {
-          const row = rowsById[id];
-          if (!row) return;
-
-          row._depth = depth;
-
-          (childIdsById[id] || []).forEach(function (childId) {
-            annotateDepth(childId, depth + 1);
-          });
-        }
-
-        // Start depth annotation from each root node.
-        data.forEach(function (row) {
-          if (!row.parent) {
-            annotateDepth(row.id, 0);
-          }
-        });
-
-        // In the initial collapsed mode, only root + first level are visible.
-        function buildInitialRows() {
-          return data
-                  .filter(function (row) {
-                    return row._depth <= INITIAL_VISIBLE_DEPTH;
-                  })
-                  .map(function (row) {
-                    return Object.assign({}, row);
+                  tableData.forEach(function (item) {
+                    if (!item.parent) {
+                      return;
+                    }
+                    childCountByParent[item.parent] = (childCountByParent[item.parent] || 0) + 1;
                   });
-        }
 
-        // Overlay logic from the repository behavior for true leaves.
-        function showOverlay(node) {
-          let name = node.get('name');
-          let desc = node.get('description');
-          let guidance = node.get('level-of-guidance');
-          let focus = node.get('focus');
-          let background = node.get('background');
-          let personalization = node.get('level-of-personalization');
-          let evaluation = node.get('evaluation');
-          let link = node.get('link');
+                  return childCountByParent;
+                }
 
-          let markup = '';
-          markup += name ? '<h2>' + name + '</h2>' : '';
+                var childCountByParent = buildChildLookup(fullTableData);
 
-          if (link) {
-            markup += '<p><a target="_blank" href="' + link + '">Learn more</a></p>';
-          }
+                // Build a reduced root view: keep the real root and only its direct children.
+                // The direct children are rendered as leaves in this temporary dataset so that
+                // no deeper levels are shown while the root stays in the center.
+                function buildRootOnlyTable(tableData) {
+                  var reduced = [];
 
-          markup += desc ? '<p>' + desc + '</p>' : '';
+                  tableData.forEach(function (item) {
+                    if (item.id === ROOT_ID) {
+                      reduced.push(Object.assign({}, item));
+                    }
+                  });
 
-          if (guidance || focus || background || personalization || evaluation) {
-            markup += '<ul>';
-            markup += guidance ? '<li>Level of Guidance: ' + guidance + '</li>' : '';
-            markup += focus ? '<li>Focus: ' + focus + '</li>' : '';
-            markup += background ? '<li>Background: ' + background + '</li>' : '';
-            markup += personalization ? '<li>Personalization: ' + personalization + '</li>' : '';
-            markup += evaluation ? '<li>Evaluation: ' + evaluation + '</li>' : '';
-            markup += '</ul>';
-          }
+                  tableData.forEach(function (item) {
+                    if (item.parent === ROOT_ID) {
+                      reduced.push(Object.assign({}, item, {
+                        // Remember whether this apparent leaf actually has hidden children
+                        // in the full dataset. We use this information on click.
+                        hasHiddenChildren: !!childCountByParent[item.id]
+                      }));
+                    }
+                  });
 
-          document.getElementById('overlay-content').innerHTML = markup;
-          document.getElementById('overlay').classList.remove('hide');
-        }
+                  return reduced;
+                }
 
-        function configureChart(currentChart) {
-          currentChart.title().enabled(true).useHtml(true).text(
-                  '<h1 style="font-size:225%; font-weight: bold;">Gamification Strategy Compass<br><span style="font-size: 100%; font-weight: normal">(last modified: 2026-01-04)</span></h1>'
-          );
+                function openLeafOverlay(node) {
+                  var name = node.get('name');
+                  var desc = node.get('description');
+                  var guidance = node.get('level-of-guidance');
+                  var focus = node.get('focus');
+                  var background = node.get('background');
+                  var personalization = node.get('level-of-personalization');
+                  var evaluation = node.get('evaluation');
+                  var link = node.get('link');
 
-          currentChart.calculationMode('ordinal-from-leaves');
-          currentChart.labels().hAlign('center');
-          currentChart.palette(['#0288d1', '#d4e157', '#ff6e40', '#f8bbd0']);
+                  var markup = '';
+                  markup += name ? '<h2>' + name + '</h2>' : '';
+                  if (link) {
+                    markup += '<p><a target="_blank" href="' + link + '">Learn more</a></p>';
+                  }
 
-          currentChart.fill(function () {
-            return this.parent
-                    ? anychart.color.darken(this.parentColor, 0.15)
-                    : this.mainColor;
-          });
+                  markup += desc ? '<p>' + desc + '</p>' : '';
+                  if (guidance || focus || background || personalization || evaluation) {
+                    markup += '<ul>';
+                    markup += guidance ? '<li>Level of Guidance: ' + guidance + '</li>' : '';
+                    markup += focus ? '<li>Focus: ' + focus + '</li>' : '';
+                    markup += background ? '<li>Background: ' + background + '</li>' : '';
+                    markup += personalization ? '<li>Personalization: ' + personalization + '</li>' : '';
+                    markup += evaluation ? '<li>Evaluation: ' + evaluation + '</li>' : '';
+                    markup += '</ul>';
+                  }
+                  document.getElementById('overlay-content').innerHTML = markup;
+                  document.getElementById('overlay').classList.remove('hide');
+                }
 
-          let tooltip = currentChart.tooltip();
-          tooltip.useHtml(true);
-          tooltip.format(
-                  '<h5 style="font-size:14px; font-weight: 800; margin: 0.25rem 0; width: 400px; max-width: 50vw; border-bottom: 1px solid rgba(255,255,255,.5)">{%name}</h5><p style="font-size:12px; font-weight:200; width: 400px; max-width: 50vw; margin: 0.8rem 0 0.2rem;"><b>{%description}</b></p>'
-          );
-        }
+                // Apply the shared chart configuration in one place so both modes behave alike.
+                function configureChart(currentChart) {
+                  currentChart.title().enabled(true).useHtml(true).text('<h1 style="font-size:225%; font-weight: bold;">Gamification Strategy Compass<br><span style="font-size: 100%; font-weight: normal">(last modified: 2026-01-04)</span></h1>');
+                  currentChart.calculationMode('ordinal-from-leaves');
+                  currentChart.labels().hAlign('center');
+                  currentChart.palette(['#0288d1', '#d4e157', '#ff6e40', '#f8bbd0']);
+                  currentChart.fill(function () {
+                    return this.parent
+                            ? anychart.color.darken(this.parentColor, 0.15)
+                            : this.mainColor;
+                  });
 
-        // Replace the currently limited dataset with the full dataset exactly once.
-        // After that, the original drilldown behavior can continue normally.
-        function switchToFullDataAndDrill(clickedId) {
-          const fullTree = anychart.data.tree(
-                  data.map(function (row) {
-                    return Object.assign({}, row);
-                  }),
-                  'as-table'
-          );
+                  var tooltip = currentChart.tooltip();
+                  tooltip.useHtml(true);
+                  tooltip.format('<h5 style="font-size:14px; font-weight: 800; margin: 0.25rem 0; width: 400px; max-width: 50vw; border-bottom: 1px solid rgba(255,255,255,.5)">{%name}</h5><p style="font-size:12px; font-weight:200; width: 400px; max-width: 50vw; margin: 0.8rem 0 0.2rem;"><b>{%description}</b></p>');
+                  currentChart.container('container');
+                }
 
-          chart.data(fullTree);
-          chart.draw();
-          initialCollapsedMode = false;
+                // Render either the compact root view or the full interactive chart.
+                // When drillToId is provided, the freshly created full chart immediately
+                // drills down to that node so the user lands in the original view state.
+                function renderChart(mode, drillToId) {
+                  var dataTree;
 
-          // Drill into the clicked node so the transition feels natural.
-          try {
-            chart.drillTo(clickedId);
-          } catch (err) {
-            console.warn('drillTo failed for', clickedId, err);
-          }
-        }
+                  if (chart) {
+                    chart.dispose();
+                  }
 
-        // Start with only root + first level visible.
-        chart = anychart.sunburst(anychart.data.tree(buildInitialRows(), 'as-table'));
-        configureChart(chart);
+                  if (mode === 'root-only') {
+                    dataTree = anychart.data.tree(buildRootOnlyTable(fullTableData), 'as-table');
+                  } else {
+                    dataTree = anychart.data.tree(fullTableData, 'as-table');
+                  }
 
-        chart.listen('pointClick', function (e) {
-          let point = e.point || null;
-          let visibleNode = point ? point.getNode() : null;
-          if (!visibleNode) return;
+                  chart = anychart.sunburst(dataTree);
+                  configureChart(chart);
 
-          let clickedId = visibleNode.get('id');
-          let hasChildrenInFullData = !!((childIdsById[clickedId] || []).length);
-          let isVisibleLeaf = visibleNode.numChildren() === 0;
+                  chart.listen('pointClick', function (e) {
+                    var node = e.point ? e.point.getNode() : null;
+                    if (!node) {
+                      return;
+                    }
 
-          // Only during the initial collapsed mode:
-          // If the user clicks a currently visible leaf that actually has children
-          // in the full dataset, switch to the full dataset and then keep the
-          // original repository behavior from that point onward.
-          if (initialCollapsedMode && hasChildrenInFullData && isVisibleLeaf) {
-            if (typeof e.preventDefault === 'function') {
-              e.preventDefault();
-            }
+                    // In the compact root view, direct children are represented as leaves.
+                    // If such a node has hidden children in the full dataset, switch to the
+                    // normal full chart and drill into that node instead of opening details.
+                    if (mode === 'root-only' && node.get('hasHiddenChildren')) {
+                      renderChart('full', node.get('id'));
+                      return;
+                    }
 
-            switchToFullDataAndDrill(clickedId);
-            return;
-          }
+                    if (node.numChildren() === 0) {
+                      openLeafOverlay(node);
+                    }
+                  });
 
-          // Preserve the repository leaf-overlay behavior for true leaves.
-          if (!hasChildrenInFullData) {
-            if (typeof e.preventDefault === 'function') {
-              e.preventDefault();
-            }
+                  // As soon as the user drills all the way back to the original root,
+                  // restore the compact root view with only the first ring visible.
+                  if (mode === 'full') {
+                    chart.listen('drillchange', function () {
+                      window.setTimeout(function () {
+                        var path = chart.getDrilldownPath ? chart.getDrilldownPath() : [];
+                        if (!path || path.length === 0) {
+                          renderChart('root-only');
+                          return;
+                        }
 
-            showOverlay(visibleNode);
-          }
+                        var currentCenter = path[path.length - 1];
+                        var currentCenterId = currentCenter && currentCenter.get
+                                ? currentCenter.get('id')
+                                : null;
 
-          // In all other cases, do nothing here and let the original
-          // AnyChart/repository drilldown behavior happen naturally.
-        });
+                        if (currentCenterId === ROOT_ID) {
+                          renderChart('root-only');
+                        }
+                      }, 0);
+                    });
+                  }
 
-        chart.container('container');
-        chart.draw();
-      });
+                  chart.draw();
+
+                  if (mode === 'full' && drillToId) {
+                    var drillTarget = dataTree.search('id', drillToId);
+                    if (drillTarget) {
+                      chart.drillTo(drillTarget);
+                    }
+                  }
+                }
+
+                // Start in the compact root view.
+                renderChart('root-only');
+              }
+      );
     });
   </script>
 </body>
