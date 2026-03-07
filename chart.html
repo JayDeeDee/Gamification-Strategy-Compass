@@ -87,7 +87,7 @@
     }
 
     body {
-      height: 200%;
+      /*height: 200%;*/
     }
   </style>
 </head>
@@ -96,95 +96,202 @@
   <div id="overlay" class="hide"><a href="#container" title="close" id="overlay-close">x</a><div id="overlay-content"></div></div>D
 
   <script>
-
+    // Close the overlay when the close button is clicked.
     document.getElementById('overlay-close').addEventListener('click', function (e) {
-      e.preventDefault()
+      e.preventDefault();
       document.getElementById('overlay').classList.add('hide');
       document.getElementById('overlay-content').innerHTML = "";
-    })
+    });
 
     anychart.onDocumentReady(function () {
       anychart.data.loadJsonFile(
-        'data/data.json',
-        function (data) {
-          // makes tree from the data for the sample
-          let dataTree = anychart.data.tree(data, 'as-table');
+              'data/data.json',
+              function (data) {
+                // Only root (depth 0) and first level (depth 1) are visible initially.
+                const INITIAL_VISIBLE_DEPTH = 1;
 
-          // create sunburst chart
-          let chart = anychart.sunburst(dataTree);
-          chart.title().enabled(true).useHtml(true).text('<h1 style="font-size:225%; font-weight: bold;">Gamification Strategy Compass<br><span style="font-size: 100%; font-weight: normal">(last modified: 2026-01-04)</span></h1>');
+                // Stores the currently expanded first-level branch only.
+                const expandedNodes = {};
 
-          // set calculation mode
-          chart.calculationMode('ordinal-from-leaves');
+                const rowsById = {};
+                const childIdsById = {};
 
-          // set chart labels settings
-          chart.labels().hAlign('center');
+                let chart = null;
 
-          // set custom palette
-          chart.palette(['#0288d1', '#d4e157', '#ff6e40', '#f8bbd0']);
+                data.forEach(function (row) {
+                  rowsById[row.id] = row;
+                  childIdsById[row.id] = childIdsById[row.id] || [];
+                });
 
-          // set point fill
-          chart.fill(function () {
-            return this.parent
-              ? anychart.color.darken(this.parentColor, 0.15)
-              : this.mainColor;
-          });
+                data.forEach(function (row) {
+                  if (row.parent) {
+                    childIdsById[row.parent] = childIdsById[row.parent] || [];
+                    childIdsById[row.parent].push(row.id);
+                  }
+                });
 
-          chart.listen('pointClick', function(e) {
-            let node = (e.point) ? e.point.getNode() : null;
-            if (node && node.numChildren() === 0) {
-              // Leaf
-              let name = node.get('name');
-              let desc = node.get('description');
-              let guidance = node.get('level-of-guidance');
-              let focus = node.get('focus');
-              let background = node.get('background');
-              let personalization = node.get('level-of-personalization');
-              let evaluation = node.get('evaluation');
-              let link = node.get('link');
-              console.log('Leaf clicked:', name, desc);
+                function annotateDepth(id, depth) {
+                  const row = rowsById[id];
+                  if (!row) return;
 
-              let markup = '';
-              markup += name ? '<h2>'+name+'</h2>': "";
-              if(link) {
-                markup += '<p><a target="_blank" href="'+link+'">Learn more</a></p>';
+                  row._depth = depth;
+
+                  (childIdsById[id] || []).forEach(function (childId) {
+                    annotateDepth(childId, depth + 1);
+                  });
+                }
+
+                data.forEach(function (row) {
+                  if (!row.parent) {
+                    annotateDepth(row.id, 0);
+                  }
+                });
+
+                function nearestExpandableAncestorId(row) {
+                  let current = row;
+
+                  while (current && current._depth > INITIAL_VISIBLE_DEPTH) {
+                    current = rowsById[current.parent];
+                  }
+
+                  return current ? current.id : null;
+                }
+
+                function isVisible(row) {
+                  if (row._depth <= INITIAL_VISIBLE_DEPTH) return true;
+
+                  const expandableAncestorId = nearestExpandableAncestorId(row);
+                  return !!expandedNodes[expandableAncestorId];
+                }
+
+                function buildVisibleRows() {
+                  return data
+                          .filter(isVisible)
+                          .map(function (row) {
+                            return Object.assign({}, row);
+                          });
+                }
+
+                function showOverlay(node) {
+                  let name = node.get('name');
+                  let desc = node.get('description');
+                  let guidance = node.get('level-of-guidance');
+                  let focus = node.get('focus');
+                  let background = node.get('background');
+                  let personalization = node.get('level-of-personalization');
+                  let evaluation = node.get('evaluation');
+                  let link = node.get('link');
+
+                  let markup = '';
+                  markup += name ? '<h2>' + name + '</h2>' : '';
+
+                  if (link) {
+                    markup += '<p><a target="_blank" href="' + link + '">Learn more</a></p>';
+                  }
+
+                  markup += desc ? '<p>' + desc + '</p>' : '';
+
+                  if (guidance || focus || background || personalization || evaluation) {
+                    markup += '<ul>';
+                    markup += guidance ? '<li>Level of Guidance: ' + guidance + '</li>' : '';
+                    markup += focus ? '<li>Focus: ' + focus + '</li>' : '';
+                    markup += background ? '<li>Background: ' + background + '</li>' : '';
+                    markup += personalization ? '<li>Personalization: ' + personalization + '</li>' : '';
+                    markup += evaluation ? '<li>Evaluation: ' + evaluation + '</li>' : '';
+                    markup += '</ul>';
+                  }
+
+                  document.getElementById('overlay-content').innerHTML = markup;
+                  document.getElementById('overlay').classList.remove('hide');
+                }
+
+                function configureChart(currentChart) {
+                  currentChart.title().enabled(true).useHtml(true).text(
+                          '<h1 style="font-size:225%; font-weight: bold;">Gamification Strategy Compass<br><span style="font-size: 100%; font-weight: normal">(last modified: 2026-01-04)</span></h1>'
+                  );
+
+                  currentChart.calculationMode('ordinal-from-leaves');
+                  currentChart.labels().hAlign('center');
+                  currentChart.palette(['#0288d1', '#d4e157', '#ff6e40', '#f8bbd0']);
+
+                  currentChart.fill(function () {
+                    return this.parent
+                            ? anychart.color.darken(this.parentColor, 0.15)
+                            : this.mainColor;
+                  });
+
+                  // Disable point selection via interactivity API.
+                  currentChart.interactivity().selectionMode('none');
+
+                  let tooltip = currentChart.tooltip();
+                  tooltip.useHtml(true);
+                  tooltip.format(
+                          '<h5 style="font-size:14px; font-weight: 800; margin: 0.25rem 0; width: 400px; max-width: 50vw; border-bottom: 1px solid rgba(255,255,255,.5)">{%name}</h5><p style="font-size:12px; font-weight:200; width: 400px; max-width: 50vw; margin: 0.8rem 0 0.2rem;"><b>{%description}</b></p>'
+                  );
+                }
+
+                function refreshChart(drillToId) {
+                  const visibleTree = anychart.data.tree(buildVisibleRows(), 'as-table');
+                  chart.data(visibleTree);
+                  chart.draw();
+
+                  if (drillToId) {
+                    try {
+                      chart.drillTo(drillToId);
+                    } catch (err) {
+                      console.warn('drillTo failed for', drillToId, err);
+                    }
+                  }
+                }
+
+                // Keep only one branch expanded at a time.
+                function expandOnly(clickedId) {
+                  Object.keys(expandedNodes).forEach(function (key) {
+                    delete expandedNodes[key];
+                  });
+                  expandedNodes[clickedId] = true;
+                }
+
+                chart = anychart.sunburst(anychart.data.tree(buildVisibleRows(), 'as-table'));
+                configureChart(chart);
+
+                chart.listen('pointClick', function (e) {
+                  let point = e.point || null;
+                  let visibleNode = point ? point.getNode() : null;
+                  if (!visibleNode) return;
+
+                  let clickedId = visibleNode.get('id');
+                  let fullNode = rowsById[clickedId];
+                  let hasChildrenInFullData = !!((childIdsById[clickedId] || []).length);
+                  let isVisibleLeaf = visibleNode.numChildren() === 0;
+                  let depth = fullNode ? fullNode._depth : 0;
+
+                  // Open only the clicked branch and collapse all others.
+                  if (hasChildrenInFullData && isVisibleLeaf && depth >= INITIAL_VISIBLE_DEPTH) {
+                    if (typeof e.preventDefault === 'function') {
+                      e.preventDefault();
+                    }
+
+                    expandOnly(clickedId);
+                    refreshChart(clickedId);
+                    return;
+                  }
+
+                  // Show overlay for true leaves.
+                  if (!hasChildrenInFullData) {
+                    if (typeof e.preventDefault === 'function') {
+                      e.preventDefault();
+                    }
+
+                    showOverlay(visibleNode);
+                  }
+                });
+
+                chart.container('container');
+                chart.draw();
               }
-
-              markup += desc ? '<p>'+desc+'</p>' : '';
-              if(guidance || focus || background || personalization || evaluation) {
-                markup += '<ul>';
-                markup += guidance ? '<li>Level of Guidance: '+guidance+'</li>' : '';
-                markup += focus ? '<li>Focus: '+focus+'</li>' : '';
-                markup += background ? '<li>Background: '+background+'</li>' : '';
-                markup += personalization ? '<li>Personalization: '+personalization+'</li>' : '';
-                markup += evaluation ? '<li>Evaluation: '+evaluation +'</li>' : '';
-                markup += '</ul>';
-              }
-              document.getElementById('overlay-content').innerHTML =markup;
-              document.getElementById('overlay').classList.remove('hide');
-
-            }
-          });
-
-          // format chart tooltip
-          let tooltip = chart.tooltip();
-          //tooltip.title().text("Titel");
-
-          //tooltip.format("{%name}\n{%description}");
-          tooltip.useHtml(true);
-          // customize the format of the sunburst chart tooltip
-          tooltip.format('<h5 style="font-size:14px; font-weight: 800; margin: 0.25rem 0; width: 400px; max-width: 50vw; border-bottom: 1px solid rgba(255,255,255,.5)">{%name}</h5><p style="font-size:12px; font-weight:200; width: 400px; max-width: 50vw; margin: 0.8rem 0 0.2rem;"><b>{%description}</b></p>');
-          //chart.leaves().tooltip().format('<h5 style="font-size:14px; font-weight: 800; margin: 0.25rem 0;">{%name}</h5>');
-
-
-          //console.log(chart);
-          // set container id for the chart
-          chart.container('container');
-          // initiate chart drawing
-          chart.draw();
-        }
       );
     });
-</script>
+  </script>
 </body>
 </html>
