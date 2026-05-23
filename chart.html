@@ -102,7 +102,7 @@
 
           link.href = "#";
           link.className = "option-pseudolist notCurVal";
-          link.textContent = item.name || "";
+          link.textContent = item.name + " ["+ item.type +']';
           link.dataset.value = item.name || "";
           link.dataset.target = item.id || "";
           link.dataset.type = item.type || "";
@@ -345,9 +345,6 @@
         }
       );
     });
-
-
-
   </script>
 </body>
 </html>

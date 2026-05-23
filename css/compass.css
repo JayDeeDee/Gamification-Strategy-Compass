@@ -8,6 +8,10 @@ body,
     font-family: Verdana, Helvetica, Arial, sans-serif;
 }
 
+#container {
+    padding-top: 40px;
+    height: calc(100% - 40px);
+}
 
 #overlay {
     position: fixed;
@@ -54,8 +58,8 @@ body,
 
 #overlay-help-close {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 15px;
+    top: 15px;
     display: block;
     z-index: 2;
     text-align: center;
@@ -83,7 +87,7 @@ body,
 
 #overlay-content ul {
     text-align: left;
-    margin-left: 20px;
+    margin-left: 15px;
     padding-left: 0;
 }
 #overlay-content p{
@@ -110,127 +114,133 @@ body {
     /*height: 200%;*/
 }
 body.leave-mode {
-    height: 150%;
+/*height: 150%;*/
 }
 #drillTo, #findDrillPoint {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
     z-index: 1000;
     width: 350px;
     height: 32px;
     padding: 0.4rem 10px;
     border-radius: 0;
     border: 1px solid #7C868E;
+    font-size: 1rem;
 }
 #drillToBtn {
-    position: absolute;
-    top: 10px;
-    left: 364px;
-    z-index: 1000;
-    height: 32px;
-    width: 4rem;
-    display: none;
+position: absolute;
+top: 10px;
+left: 364px;
+z-index: 1000;
+height: 32px;
+width: 4rem;
+display: none;
 }
 #drillTo, #drillToBtn {
-    display: none;
+display: none;
 }
 .menu {
-    position: absolute;
-    z-index: 1000;
-    width: 99vw;
-    height: 1px;
-    overflow: visible;
+position: absolute;
+z-index: 1000;
+width: 99vw;
+height: 1px;
+overflow: visible;
 }
 .pseudolist {
-    position: relative;
-    width: 350px;
-    top: 10px;
-    left: 10px;
-    padding-top: 1.9rem;
-    height: fit-content;
-    max-height: 80vh;
-    overflow-x: hidden;
-    overflow-y: auto;
+position: relative;
+width: 350px;
+top: 15px;
+left: 15px;
+padding-top: 35px;
+height: fit-content;
+max-height: 80vh;
+overflow-x: hidden;
+overflow-y: auto;
 }
 
 .pseudolist ul {
-    position: absolute;
-    top: 0;
-    left: 0;
+position: absolute;
+top: 0;
+left: 0;
 }
 
 .pseudolist a, .pseudolist button {
-    display: none;
-    background: #fff;
-    border: 0 none;
-    text-decoration: none;
-    color: #7C868E;
-    padding: .1rem 10px;
-    padding: .1rem 10px;
-    font-size: .8rem;
+display: none;
+background: #fff;
+border: 0 none;
+text-decoration: none;
+color: #7C868E;
+padding: .2rem 10px;
+font-size: 1rem;
 }
 
 .pseudolist a.curVal, .pseudolist button.curVal  {
-    display: block;
+display: block;
 }
 
 .pseudolist a:hover, .pseudolist a:focus, .pseudolist a:active,
 .pseudolist button:hover, .pseudolist button:focus, .pseudolist button:active {
-    background: #7C868E;
-    color: #fff
+background: #7C868E;
+color: #fff
 }
 
 .btns {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+position: absolute;
+top: 15px;
+right: 15px;
 }
 
 .btn {
-    border-radius: 0;
-    border: 1px solid #7C868E;
-    background: #fff;
-    color: #7C868E;
-    font-size: .8rem;
-    height: 32px;
-    display: inline-block;
-    margin-left: 10px;
+border-radius: 0;
+border: 1px solid #7C868E;
+background: #fff;
+color: #7C868E;
+font-size: .8rem;
+height: 32px;
+display: inline-block;
+margin-left: 10px;
 }
 
 .btn svg {
-    height: 30px;
-    width: 30px;
-    color: inherit;
-    display: inline-block;
+height: 30px;
+width: 30px;
+color: inherit;
+display: inline-block;
 }
 
 #content {
-    padding: 2rem;
+padding: 2rem;
 }
 
 h1 {
-    font-size: 1.5rem;
-    line-height: 125%;
-    color: #7C868E;
+font-size: 1.5rem;
+line-height: 125%;
+color: #7C868E;
 }
 
 h2 {
-    font-size: 1.3rem;
-    line-height: 125%;
-    color: #7C868E;
+font-size: 1.3rem;
+line-height: 125%;
+color: #7C868E;
 }
 
 h3 {
-    font-size: 1.1rem;
-    line-height: 125%;
-    color: #7C868E;
+font-size: 1.1rem;
+line-height: 125%;
+color: #7C868E;
 }
 
 
 p, li {
-    font-size: 1rem;
-    line-height: 145%;
-    color: #7C868E;
+font-size: 1rem;
+line-height: 145%;
+color: #7C868E;
+}
+
+@media (max-width: 1400px) {
+    #findDrillPoint {
+        width: 250px;s
+    }
 }
 
