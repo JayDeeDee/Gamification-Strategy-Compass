@@ -10,111 +10,14 @@
   <script src="js/anychart-data-adapter.min.js"></script>
 
   <link href="css/anychart-ui.min.css" type="text/css" rel="stylesheet">
-  <style type="text/css">
-    html,
-    body,
-    #container {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: Verdana, Helvetica, Arial, sans-serif;
-    }
-    #container {
-      margin-top: 40px;
-    }
-    #overlay {
-      position: fixed;
-      z-index: 90000;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    #overlay-content {
-      position: relative;
-      z-index: 1;
-      top: 25vh;
-      width: 50%;
-      max-height: 71vh;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 2vw;
-      background-color: #fff;
-    }
-    #overlay-close {
-      position: absolute;
-      display: block;
-      z-index: 2;
-      right: 25vw;
-      top: 27vh;
-      width: 1.5rem;
-      height: 1.5rem;
-      text-align: center;
-      padding-top: 0.25rem;
-      color: #000000;
-      font-weight: bold;
-      text-decoration: none;
-      border: 1px solid #000;
-    }
-
-    #overlay-close:hover,
-    #overlay-close:focus,
-    #overlay-close:active {
-      color: #fff;
-      background: #000;
-    }
-
-    #overlay.hide {
-      display: none;
-    }
-
-    #overlay-content ul {
-      text-align: left;
-      margin-left: 20px;
-      padding-left: 0;
-    }
-    #overlay-content p{
-      text-align: left;
-    }
-    #overlay-content a{
-      color: #4D7796;
-    }
-
-    #overlay-content a:hover,
-    #overlay-content a:focus {
-      color: #2F485B;
-    }
-
-    body {
-      /*height: 200%;*/
-    }
-    body.leave-mode {
-      height: 150%;
-    }
-    #drillTo {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      z-index: 1000;
-      width: 200px;
-      height: 1.4rem;
-    }
-    #drillToBtn {
-      position: absolute;
-      top: 10px;
-      left: 214px;
-      z-index: 1000;
-      height: 1.4rem;
-    }
-  </style>
+  <link href="css/compass.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-  <input type="text" id="drillTo" value="0-title"><button id="drillToBtn">show item (by id)</button>
-  <div id="container"></div>D
+  <div class="drillTo-container">
+    <input type="text" id="findDrillPoint" value="" placeholder="Choose Starting point"><input type="text" id="drillTo" value="0-title"><button id="drillToBtn">Show</button>
+    <div class="pseudolist List-drillTo" id="psList-drillTo"></div>
+  </div>
+  <div id="container"></div>
   <div id="overlay" class="hide"><a href="#container" title="close" id="overlay-close">x</a><div id="overlay-content"></div></div>D
 
   <script>
@@ -124,6 +27,77 @@
       document.getElementById('overlay').classList.add('hide');
       document.getElementById('overlay-content').innerHTML = '';
     });
+
+    async function loadCompassData() {
+      const url = "/Gamification-Strategy-Compass/data/data.json";
+      const output = document.getElementById("psList-drillTo");
+      let drillInput = document.getElementById("drillTo");
+      let drillBtn = document.getElementById("drillToBtn");
+      let findDrillPointInput = document.getElementById("findDrillPoint");
+
+      if (!output) {
+        console.error('Element with ID "psList-drillTo" not found.');
+        return;
+      }
+
+      try {
+        const response = await fetch(url);
+
+        if (!response.ok) {
+          throw new Error(`error while loading file: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        output.innerHTML = "";
+
+        data.forEach(item => {
+          const link = document.createElement("a");
+
+          link.href = "#";
+          link.className = "option-pseudolist notCurVal";
+          link.textContent = item.name || "";
+          link.dataset.value = item.name || "";
+          link.dataset.target = item.id || "";
+          link.dataset.type = item.type || "";
+
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const target = this.getAttribute("data-target");
+            //renderChart("full", target);
+            drillInput.value = target;
+            drillBtn.click();
+          });
+
+          output.appendChild(link);
+          output.appendChild(document.createTextNode("\n"));
+        });
+      } catch (error) {
+        console.error(error);
+        output.textContent = "no data found";
+      }
+
+      findDrillPointInput.addEventListener('input', function () {
+        let currVal = this.value.toUpperCase();
+        let targetBtnLinks = document.querySelectorAll('a.option-pseudolist');
+
+        targetBtnLinks.forEach(function (link) {
+          let dataValue = (link.getAttribute('data-value') || '').toUpperCase();
+          let isMatch = currVal.length > 0 && dataValue.indexOf(currVal) > -1;
+
+          link.classList.toggle('curVal', isMatch);
+          link.classList.toggle('notCurVal', currVal.length > 0 && !isMatch);
+        });
+
+        if (currVal.length === 0) {
+          targetBtnLinks.forEach(function (link) {
+            link.classList.remove('curVal', 'notCurVal');
+          });
+        }
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", loadCompassData);
 
     anychart.onDocumentReady(function () {
       anychart.data.loadJsonFile(
@@ -208,7 +182,7 @@
 
           // Apply the shared chart configuration in one place so both modes behave alike.
           function configureChart(currentChart) {
-            currentChart.title().enabled(true).useHtml(true).text('<h1 style="font-size:225%; font-weight: bold;">Gamification Strategy Compass<br><span style="font-size: 100%; font-weight: normal">(last modified: 2026-03-07)</span></h1>');
+            currentChart.title().enabled(true).useHtml(true).text('<h1 style="font-size:225%; font-weight: bold;">Gamification Strategy Compass<br><span style="font-size: 100%; font-weight: normal">(last modified: 2026-05-22)</span></h1>');
             currentChart.calculationMode('ordinal-from-leaves');
             currentChart.labels().hAlign('center');
             currentChart.palette(['#0288d1', '#d4e157', '#ff6e40', '#f8bbd0']);
@@ -307,6 +281,8 @@
           // Start in the compact root view.
           renderChart('root-only');
 
+
+
           // drill to
           var $btn = document.getElementById('drillToBtn');
           var $input = document.getElementById('drillTo');
@@ -320,10 +296,10 @@
 
           });
 
-
         }
       );
     });
+
 
 
   </script>
