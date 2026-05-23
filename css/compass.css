@@ -7,9 +7,8 @@ body,
     padding: 0;
     font-family: Verdana, Helvetica, Arial, sans-serif;
 }
-#container {
-    margin-top: 40px;
-}
+
+
 #overlay {
     position: fixed;
     z-index: 90000;
@@ -18,6 +17,15 @@ body,
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+#overlay-help {
+    position: fixed;
+    z-index: 90000;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
 }
 
 #overlay-content {
@@ -32,30 +40,44 @@ body,
     padding: 2vw;
     background-color: #fff;
 }
+
 #overlay-close {
     position: absolute;
     display: block;
     z-index: 2;
     right: 25vw;
     top: 27vh;
-    width: 1.5rem;
-    height: 1.5rem;
     text-align: center;
-    padding-top: 0.25rem;
-    color: #000000;
     font-weight: bold;
     text-decoration: none;
-    border: 1px solid #000;
 }
 
-#overlay-close:hover,
-#overlay-close:focus,
-#overlay-close:active {
+#overlay-help-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+    z-index: 2;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn {
+    color: #7c868e;
+    border: 1px solid #7c868e;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
     color: #fff;
-    background: #000;
+    background: #7c868e;
 }
 
-#overlay.hide {
+
+#overlay.hide,
+#overlay-help.hide {
     display: none;
 }
 
@@ -76,6 +98,14 @@ body,
     color: #2F485B;
 }
 
+iframe {
+    width: 100%;
+    height:100%;
+    overflow: auto;
+    border: 0 none;
+    background-color: rgba(255,255,255,0.95);
+}
+
 body {
     /*height: 200%;*/
 }
@@ -88,7 +118,7 @@ body.leave-mode {
     left: 10px;
     z-index: 1000;
     width: 350px;
-    height: 1.8rem;
+    height: 32px;
     padding: 0.4rem 10px;
     border-radius: 0;
     border: 1px solid #7C868E;
@@ -98,16 +128,19 @@ body.leave-mode {
     top: 10px;
     left: 364px;
     z-index: 1000;
-    height: 1.8rem;
+    height: 32px;
     width: 4rem;
     display: none;
 }
 #drillTo, #drillToBtn {
     display: none;
 }
-.drillTo-container {
+.menu {
     position: absolute;
     z-index: 1000;
+    width: 99vw;
+    height: 1px;
+    overflow: visible;
 }
 .pseudolist {
     position: relative;
@@ -147,3 +180,57 @@ body.leave-mode {
     background: #7C868E;
     color: #fff
 }
+
+.btns {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn {
+    border-radius: 0;
+    border: 1px solid #7C868E;
+    background: #fff;
+    color: #7C868E;
+    font-size: .8rem;
+    height: 32px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.btn svg {
+    height: 30px;
+    width: 30px;
+    color: inherit;
+    display: inline-block;
+}
+
+#content {
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 125%;
+    color: #7C868E;
+}
+
+h2 {
+    font-size: 1.3rem;
+    line-height: 125%;
+    color: #7C868E;
+}
+
+h3 {
+    font-size: 1.1rem;
+    line-height: 125%;
+    color: #7C868E;
+}
+
+
+p, li {
+    font-size: 1rem;
+    line-height: 145%;
+    color: #7C868E;
+}
+
