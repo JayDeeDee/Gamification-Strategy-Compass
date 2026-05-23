@@ -1,0 +1,149 @@
+html,
+body,
+#container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+#container {
+    margin-top: 40px;
+}
+#overlay {
+    position: fixed;
+    z-index: 90000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#overlay-content {
+    position: relative;
+    z-index: 1;
+    top: 25vh;
+    width: 50%;
+    max-height: 71vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vw;
+    background-color: #fff;
+}
+#overlay-close {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    right: 25vw;
+    top: 27vh;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    padding-top: 0.25rem;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+
+#overlay-close:hover,
+#overlay-close:focus,
+#overlay-close:active {
+    color: #fff;
+    background: #000;
+}
+
+#overlay.hide {
+    display: none;
+}
+
+#overlay-content ul {
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 0;
+}
+#overlay-content p{
+    text-align: left;
+}
+#overlay-content a{
+    color: #4D7796;
+}
+
+#overlay-content a:hover,
+#overlay-content a:focus {
+    color: #2F485B;
+}
+
+body {
+    /*height: 200%;*/
+}
+body.leave-mode {
+    height: 150%;
+}
+#drillTo, #findDrillPoint {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    width: 350px;
+    height: 1.8rem;
+    padding: 0.4rem 10px;
+    border-radius: 0;
+    border: 1px solid #7C868E;
+}
+#drillToBtn {
+    position: absolute;
+    top: 10px;
+    left: 364px;
+    z-index: 1000;
+    height: 1.8rem;
+    width: 4rem;
+    display: none;
+}
+#drillTo, #drillToBtn {
+    display: none;
+}
+.drillTo-container {
+    position: absolute;
+    z-index: 1000;
+}
+.pseudolist {
+    position: relative;
+    width: 350px;
+    top: 10px;
+    left: 10px;
+    padding-top: 1.9rem;
+    height: fit-content;
+    max-height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.pseudolist ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pseudolist a, .pseudolist button {
+    display: none;
+    background: #fff;
+    border: 0 none;
+    text-decoration: none;
+    color: #7C868E;
+    padding: .1rem 10px;
+    padding: .1rem 10px;
+    font-size: .8rem;
+}
+
+.pseudolist a.curVal, .pseudolist button.curVal  {
+    display: block;
+}
+
+.pseudolist a:hover, .pseudolist a:focus, .pseudolist a:active,
+.pseudolist button:hover, .pseudolist button:focus, .pseudolist button:active {
+    background: #7C868E;
+    color: #fff
+}
